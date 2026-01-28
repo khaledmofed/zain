@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Government & Public Sector"
+    },
+    {
+        "id": 2,
+        "title": "Banking & Financial Services"
+    },
+    {
+        "id": 3,
+        "title": "Oil, Gas, Energy & Utilities"
+    },
+    {
+        "id": 4,
+        "title": "Industry & Manufacturing"
+    },
+    {
+        "id": 5,
+        "title": "Logistics & Transportation"
+    },
+    {
+        "id": 6,
+        "title": "Healthcare"
+    },
+    {
+        "id": 7,
+        "title": "Education & Training"
+    },
+    {
+        "id": 8,
+        "title": "Hospitality & Tourism"
+    },
+    {
+        "id": 9,
+        "title": "Retail & Commerce"
+    },
+    {
+        "id": 10,
+        "title": "Construction & Infrastructure"
+    },
+    {
+        "id": 11,
+        "title": "Enterprises & SMEs"
+    }
+]

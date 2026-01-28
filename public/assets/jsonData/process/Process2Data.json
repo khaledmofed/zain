@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "thumb": "1.jpg",
+        "steps": "01",
+        "title": "Integrated delivery across infrastructure and digital transformation",
+        "icon": "flaticon-network"
+    },
+    {
+        "id": 2,
+        "thumb": "2.jpg",
+        "steps": "02",
+        "title": "Strong local expertise aligned with global standards",
+        "icon": "flaticon-global"
+    },
+    {
+        "id": 3,
+        "thumb": "3.jpg",
+        "steps": "03",
+        "title": "Secure, scalable, and compliance-driven solutions",
+        "icon": "flaticon-encrypted"
+    },
+    {
+        "id": 4,
+        "thumb": "1.jpg",
+        "steps": "04",
+        "title": "Strategic partnership mindset focused on long-term value",
+        "icon": "flaticon-handshake"
+    }
+]

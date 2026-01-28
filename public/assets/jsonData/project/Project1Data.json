@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "thumb": "strawbarry.jpeg",
+        "tag": "Web Development",
+        "title": "Strawberry Garden",
+        "text": "Strawberry Garden is a fully integrated destination in Wilayat Barka, Oman, combining modern agriculture with family entertainment. Through advanced solutions and intelligent design, it transforms climatic challenges into opportunities, creating an immersive experience where technology meets nature.",
+        "btnText": "View Project",
+        "link": "https://strawgardenom.com/"
+    },
+    {
+        "id": 2,
+        "thumb": "2.webp",
+        "tag": "Partnership",
+        "title": "Business program management",
+        "text": "Strawberry Garden is a fully integrated destination in Wilayat Barka, Oman, combining modern agriculture with family entertainment. Through advanced solutions and intelligent design, it transforms climatic challenges into opportunities, creating an immersive experience where technology meets nature.",
+        "btnText": "View Project",
+        "link": "#"
+    }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "activeClass": "active",
+    "memberThumb": "saif1.jpg",
+    "designation": "Chief Executive Officer",
+    "name": "Saif Al Busaidi",
+    "email": "saif@zain.com",
+    "skillProgress": [
+      {
+        "id": 1,
+        "title": "Leadership",
+        "end": 95
+      },
+      {
+        "id": 2,
+        "title": "Business Strategy",
+        "end": 92
+      },
+      {
+        "id": 3,
+        "title": "Corporate Governance",
+        "end": 90
+      }
+    ],
+    "memberData": [
+      {
+        "id": 1,
+        "listTitle": "Education",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Business Administration",
+            "info": "MBA - Executive Management",
+            "timeSpan": "2008 - 2010"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "listTitle": "Experience",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Chief Executive Officer",
+            "info": "Zain Consulting",
+            "timeSpan": "2018 - Present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "activeClass": "",
+    "memberThumb": "waleed.jpg",
+    "designation": "Digital Business Leader",
+    "name": "Waleed Jouda",
+    "email": "waleed@zain.com",
+    "skillProgress": [
+      {
+        "id": 1,
+        "title": "Digital Transformation",
+        "end": 93
+      },
+      {
+        "id": 2,
+        "title": "Product Innovation",
+        "end": 90
+      },
+      {
+        "id": 3,
+        "title": "Technology Strategy",
+        "end": 88
+      }
+    ],
+    "memberData": [
+      {
+        "id": 1,
+        "listTitle": "Education",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Computer Science",
+            "info": "BSc - Information Systems",
+            "timeSpan": "2009 - 2013"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "listTitle": "Experience",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Digital Business Leader",
+            "info": "Zain Consulting",
+            "timeSpan": "2019 - Present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "activeClass": "",
+    "memberThumb": "abdullah.webp",
+    "designation": "Digital Marketing Expert",
+    "name": "Abdulla Nijim",
+    "email": "abdulla@zain.com",
+    "skillProgress": [
+      {
+        "id": 1,
+        "title": "Performance Marketing",
+        "end": 94
+      },
+      {
+        "id": 2,
+        "title": "Social Media Strategy",
+        "end": 92
+      },
+      {
+        "id": 3,
+        "title": "Brand Positioning",
+        "end": 89
+      }
+    ],
+    "memberData": [
+      {
+        "id": 1,
+        "listTitle": "Education",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Marketing",
+            "info": "BSc - Digital Marketing",
+            "timeSpan": "2010 - 2014"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "listTitle": "Experience",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Digital Marketing Expert",
+            "info": "Zain Consulting",
+            "timeSpan": "2020 - Present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "activeClass": "",
+    "memberThumb": "hamad.jpg",
+    "designation": "Administrative Affairs",
+    "name": "Hamad Al Hadhrami",
+    "email": "hamad@zain.com",
+    "skillProgress": [
+      {
+        "id": 1,
+        "title": "Operations Management",
+        "end": 91
+      },
+      {
+        "id": 2,
+        "title": "HR & Administration",
+        "end": 89
+      },
+      {
+        "id": 3,
+        "title": "Process Optimization",
+        "end": 87
+      }
+    ],
+    "memberData": [
+      {
+        "id": 1,
+        "listTitle": "Education",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Business Management",
+            "info": "BBA - Operations Management",
+            "timeSpan": "2007 - 2011"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "listTitle": "Experience",
+        "memberInfo": [
+          {
+            "id": 1,
+            "title": "Administrative Affairs Manager",
+            "info": "Zain Consulting",
+            "timeSpan": "2017 - Present"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "thumb": "mis-platform.jpg",
+        "activeClass": "active",
+        "steps": "01",
+        "title": "Management Information Systems (MIS)",
+        "text": "Comprehensive enterprise systems for reporting, alerts, and governance support enabling data-driven decision-making."
+    },
+    {
+        "id": "2",
+        "thumb": "automation-solutionss.jpg",
+        "activeClass": "",
+        "steps": "02",
+        "title": "Intelligent Automation Solutions",
+        "text": "Advanced RPA and AI-powered automation that streamline processes and eliminate manual tasks across departments."
+    },
+    {
+        "id": "3",
+        "thumb": "analytics-bi.jpg",
+        "activeClass": "",
+        "steps": "03",
+        "title": "Analytics and BI Platforms",
+        "text": "Powerful dashboards, KPIs, and predictive analytics that unlock insights and drive strategic business decisions."
+    },
+    {
+        "id": "4",
+        "thumb": "enterprise-portals.jpg",
+        "activeClass": "",
+        "steps": "04",
+        "title": "Enterprise Portals and Digital Applications",
+        "text": "Custom web platforms and intelligent applications tailored to enhance customer engagement and operational efficiency."
+    }
+]

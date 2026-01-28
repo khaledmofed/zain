@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "bgThumb": "33.webp",
+        "title": "Zain Solutions",
+        "title1": "Integrated Infrastructure",
+        "title2": "& Digital Transformation",
+        "btnText": "About Us",
+        "shapeThumb": "4.png",
+        "videoId": "owhuBrGIOsEdsk"
+    },
+    {
+        "id": 2,
+        "bgThumb": "6.jpg",
+        "title": "Secure. Intelligent. Scalable.",
+        "title1": "Automation, Data",
+        "title2": "& AI-Driven Solutions",
+        "btnText": "About Us",
+        "shapeThumb": "4.png",
+        "videoId": "owhuBrGIOsEdsk"
+    }
+]

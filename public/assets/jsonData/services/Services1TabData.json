@@ -1,0 +1,148 @@
+[
+    {
+        "id": 1,
+        "tabClass": "show active",
+        "tabId": "tab1",
+        "ariaLabelled": "nav-id-1",
+        "tabType": "businessModel",
+        "intro": "Zain Solutions operates through two specialized Business Units:",
+        "businessUnits": [
+            {
+                "id": 1,
+                "icon": "flaticon-portfolio",
+                "title": "Zain Infra",
+                "subtitle": "Infrastructure, Systems & Security"
+            },
+            {
+                "id": 2,
+                "icon": "flaticon-megaphone",
+                "title": "Zain DX",
+                "subtitle": "Digital Transformation & Intelligent Solutions"
+            }
+        ],
+        "modelProvides": [
+            {
+                "id": 1,
+                "icon": "flaticon-career",
+                "title": "Clear accountability and governance"
+            },
+            {
+                "id": 2,
+                "icon": "flaticon-group",
+                "title": "Reduced operational complexity"
+            },
+            {
+                "id": 3,
+                "icon": "flaticon-solution-5",
+                "title": "End-to-end delivery \"from foundation to intelligence\""
+            },
+            {
+                "id": 4,
+                "icon": "flaticon-personal",
+                "title": "Flexible scalability based on project requirements"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "tabClass": "",
+        "tabId": "tab2",
+        "ariaLabelled": "nav-id-2",
+        "tabType": "businessUnit",
+        "unitTitle": "Infrastructure, Systems & Security Business Unit",
+        "unitDescription": "Zain Infra is responsible for designing, building, and operating secure, resilient, and scalable technology foundations that support daily enterprise operations.",
+        "services": [
+            {
+                "id": 1,
+                "animationDelay": 0,
+                "icon": "flaticon-business-trip",
+                "title": "IT Infrastructure",
+                "text": "Enterprise networking, data centers, cloud readiness"
+            },
+            {
+                "id": 2,
+                "animationDelay": "",
+                "icon": "flaticon-online-store",
+                "title": "Systems & Hardware Integration",
+                "text": "System integration, interoperability, environment management"
+            },
+            {
+                "id": 3,
+                "animationDelay": "",
+                "icon": "flaticon-funds",
+                "title": "Cybersecurity & Physical Security",
+                "text": "Network/system security, surveillance and access control, compliance support"
+            },
+            {
+                "id": 4,
+                "animationDelay": "",
+                "icon": "flaticon-career",
+                "title": "Business Continuity & Managed Services",
+                "text": "UPS, managed services, operational support"
+            }
+        ],
+        "valueDelivered": "Reliable and secure foundations that enable successful digital transformation initiatives.",
+        "btnText": "Learn More",
+        "link": "/zain-infra"
+    },
+    {
+        "id": 3,
+        "tabClass": "",
+        "tabId": "tab3",
+        "ariaLabelled": "nav-id-3",
+        "tabType": "businessUnit",
+        "unitTitle": "Digital Transformation & Intelligent Solutions Business Unit",
+        "unitDescription": "Zain DX drives digital innovation, enabling organizations to move from traditional operating models to intelligent, automated, and data-driven enterprises.",
+        "services": [
+            {
+                "id": 1,
+                "animationDelay": 0,
+                "icon": "flaticon-budget",
+                "title": "Digital Transformation & Automation",
+                "text": "Process analysis, workflow automation, RPA, AI solutions"
+            },
+            {
+                "id": 2,
+                "animationDelay": "",
+                "icon": "flaticon-money-1",
+                "title": "Management Information Systems (MIS)",
+                "text": "Enterprise systems, reporting & alerts, governance support"
+            },
+            {
+                "id": 3,
+                "animationDelay": "",
+                "icon": "flaticon-funds",
+                "title": "Data Analytics & Business Intelligence",
+                "text": "Dashboards, KPIs, predictive and prescriptive analytics"
+            },
+            {
+                "id": 4,
+                "animationDelay": "",
+                "icon": "flaticon-world-globe",
+                "title": "Digital & Strategic Consulting",
+                "text": "Transformation roadmaps, process optimization, program/project governance"
+            },
+            {
+                "id": 5,
+                "animationDelay": "",
+                "icon": "flaticon-personal",
+                "title": "Platforms & Applications",
+                "text": "Enterprise web platforms, intelligent applications, tailored digital solutions"
+            }
+        ],
+        "valueDelivered": "Improved efficiency, smarter decision-making, and accelerated digital maturity.",
+        "integratedApproach": {
+            "title": "Integrated Delivery Approach",
+            "description": "Zain Solutions ensures seamless integration between Zain Infra and Zain DX so that every engagement:",
+            "points": [
+                "Starts with a secure and resilient foundation",
+                "Operates under unified governance and accountability",
+                "It is enhanced with automation, analytics, and intelligence",
+                "Evolves continuously to maximize long-term value"
+            ],
+            "conclusion": "Clients engage with one company and receive a fully integrated solution."
+        },
+        "btnText": "Learn More",
+        "link": "/zain-dx"
+    }
+]
