@@ -2,6 +2,9 @@
   "name": "consua-nextjs",
   "version": "1.5",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +16,7 @@
     "bootstrap": "^5.3.8",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "next": "16.0.1",
+    "next": "16.0.10",
     "next-intl": "^4.7.0",
     "react": "^19.2.0",
     "react-circular-progressbar": "^2.2.0",
