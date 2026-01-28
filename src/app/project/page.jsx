@@ -1,19 +1,21 @@
-import LayoutStyle7 from '@/components/Layouts/LayoutStyle7';
-import ProjectStyle2 from '@/components/project/ProjectStyle2';
-import React from 'react';
+import LayoutStyle7 from "@/components/Layouts/LayoutStyle7";
+import ProjectStyle2 from "@/components/project/ProjectStyle2";
+import React from "react";
 
 export const metadata = {
-    title: "Zain - Consulting Business - Project"
-}
+  title: "Zain - Consulting Business - Project",
+};
+
+export const dynamic = "force-dynamic";
 
 const ProjectPage = () => {
-    return (
-        <>
-            <LayoutStyle7 breadCrumb="Project" title="Latest Projects">
-                <ProjectStyle2 />
-            </LayoutStyle7>
-        </>
-    );
+  return (
+    <>
+      <LayoutStyle7 breadCrumb="Project" title="Latest Projects">
+        <ProjectStyle2 />
+      </LayoutStyle7>
+    </>
+  );
 };
 
 export default ProjectPage;

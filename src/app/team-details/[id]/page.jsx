@@ -1,24 +1,25 @@
-import TeamDetailsContent from '@/components/team/TeamDetailsContent';
-import React from 'react';
-import TeamData from '@/assets/jsonData/team/TeamData.json';
-import LayoutStyle7 from '@/components/Layouts/LayoutStyle7';
+import TeamDetailsContent from "@/components/team/TeamDetailsContent";
+import React from "react";
+import TeamData from "@/assets/jsonData/team/TeamData.json";
+import LayoutStyle7 from "@/components/Layouts/LayoutStyle7";
 
 export const metadata = {
-    title: "Zain - Consulting Business - Team Details"
-}
+  title: "Zain - Consulting Business - Team Details",
+};
+
+export const dynamic = "force-dynamic";
 
 const TeamDetails = async ({ params }) => {
+  const { id } = await params;
+  const data = TeamData.find((team) => team.id === parseInt(id));
 
-    const { id } = await params
-    const data = TeamData.find(team => team.id === parseInt(id))
-
-    return (
-        <>
-            <LayoutStyle7 breadCrumb="Team-details" title="Team Details">
-                {data && <TeamDetailsContent teamInfo={data} />}
-            </LayoutStyle7>
-        </>
-    );
+  return (
+    <>
+      <LayoutStyle7 breadCrumb="Team-details" title="Team Details">
+        {data && <TeamDetailsContent teamInfo={data} />}
+      </LayoutStyle7>
+    </>
+  );
 };
 
 export default TeamDetails;

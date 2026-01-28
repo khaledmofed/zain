@@ -1,18 +1,18 @@
 import LayoutStyle7 from "@/components/Layouts/LayoutStyle7";
-import BlogWithSidebarContent from "@/components/blog/BlogWithSidebarContent";
-import React, { Suspense } from "react";
+import BlogWithSidebarContentWrapper from "@/components/blog/BlogWithSidebarContentWrapper";
+import React from "react";
 
 export const metadata = {
   title: "Zain - Consulting Business - Blog With Sidebar",
 };
 
+export const dynamic = "force-dynamic";
+
 const BlogWithSidebarPage = () => {
   return (
     <>
       <LayoutStyle7 breadCrumb="blog-with-sidebar" title="Blog With Sidebar">
-        <Suspense fallback={<div>Loading...</div>}>
-          <BlogWithSidebarContent />
-        </Suspense>
+        <BlogWithSidebarContentWrapper />
       </LayoutStyle7>
     </>
   );
