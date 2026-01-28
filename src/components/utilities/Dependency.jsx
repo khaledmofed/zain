@@ -1,26 +1,47 @@
-"use client"
-import { useEffect } from 'react';
-import { ScrollToTop } from 'react-simple-scroll-up';
+"use client";
+import { useEffect } from "react";
+import { ScrollToTop } from "react-simple-scroll-up";
+import { useLocale } from "next-intl";
 
 const Dependency = () => {
+  const locale = useLocale();
 
   useEffect(() => {
-
     // Dynamically import Bootstrap JS to avoid SSR issues
-    import('bootstrap/dist/js/bootstrap.bundle.min.js').then(() => {
-
-    }).catch((err) => {
-      console.error('Project loading ...:', err);
-    });
+    import("bootstrap/dist/js/bootstrap.bundle.min.js")
+      .then(() => {})
+      .catch((err) => {
+        console.error("Project loading ...:", err);
+      });
   }, []);
 
   return (
     <>
-      <ScrollToTop 
+      <a
+        className="whatsapp-float"
+        href={`https://wa.me/96872720046?text=${encodeURIComponent(
+          locale === "ar"
+            ? "مرحباً، أود الاستفسار عن خدماتكم."
+            : "Hello, I’d like to inquire about your services.",
+        )}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={
+          locale === "ar" ? "تواصل عبر واتساب" : "Contact on WhatsApp"
+        }
+      >
+        <i className="fab fa-whatsapp" aria-hidden="true"></i>
+      </a>
+      <ScrollToTop
         symbol={<i className="fal fa-long-arrow-up"></i>}
         showAt={100}
         easing="easeInOutSine"
-        style={{ position: 'fixed', bottom: '30px', right: '30px', zIndex: 999 }}
+        style={{
+          position: "fixed",
+          bottom: "30px",
+          right: "30px",
+          zIndex: 999,
+        }}
       />
     </>
   );
