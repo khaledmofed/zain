@@ -1,13 +1,18 @@
+"use client";
 import React from 'react';
 import Animate from '../animation/Animate';
+import { useTranslations } from 'next-intl';
 
 const ContactInfo = () => {
+    const t = useTranslations('contact');
+    const tCommon = useTranslations('common');
+
     return (
         <>
             <div className="contact-style-one-info">
-                <h2>Contact Information</h2>
+                <h2>{t('title')}</h2>
                 <p>
-                    Zain Solutions, your trusted digital consulting partner in Muscat, Sultanate of Oman.
+                    {t('description')}
                 </p>
                 <ul>
 
@@ -17,8 +22,8 @@ const ContactInfo = () => {
                                 <i className="fas fa-phone-alt"></i>
                             </div>
                             <div className="content">
-                                <h5 className="title">Phone</h5>
-                                <a href="tel:+96872720046">+968 7272 0046</a>
+                                <h5 className="title">{tCommon('phone')}</h5>
+                                <a href="tel:+96872720046" className="phone-number" dir="ltr">+968 7272 0046</a>
                             </div>
                         </li>
                     </Animate>
@@ -29,9 +34,9 @@ const ContactInfo = () => {
                                 <i className="fas fa-map-marker-alt"></i>
                             </div>
                             <div className="info">
-                                <h5 className="title">Our Location</h5>
+                                <h5 className="title">{tCommon('addressLabel')}</h5>
                                 <p>
-                                    Zain Solutions<br />Muscat, Sultanate of Oman
+                                    {t('addressLine1')}<br />{t('addressLine2')}
                                 </p>
                             </div>
                         </li>
@@ -43,7 +48,7 @@ const ContactInfo = () => {
                                 <i className="fas fa-envelope-open-text"></i>
                             </div>
                             <div className="info">
-                                <h5 className="title">Official Email</h5>
+                                <h5 className="title">{tCommon('email')}</h5>
                                 <a href="mailto:info@zainom.com">info@zainom.com</a>
                             </div>
                         </li>

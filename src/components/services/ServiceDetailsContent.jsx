@@ -1,12 +1,16 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import Faq1Data from '@/assets/jsonData/faq/Faq1Data.json';
 import SingleFaq1 from '../faq/SingleFaq1';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import handleSmoothScroll from '../utilities/handleSmoothScroll';
 
 const ServiceDetailsContent = ({ serviceInfo }) => {
-    const { thumbFull, title } = serviceInfo
+    const { thumbFull, title } = serviceInfo;
+    const tCommon = useTranslations('common');
+    const tServices = useTranslations('services');
 
     return (
         <>
@@ -100,13 +104,13 @@ const ServiceDetailsContent = ({ serviceInfo }) => {
 
                                 <div className="single-widget bg-dark quick-contact-widget text-light" style={{ backgroundImage: `url(/assets/img/shape/15.png)` }}>
                                     <div className="content">
-                                        <h3>Need Help?</h3>
+                                        <h3>{tCommon('needHelp')}</h3>
                                         <p>
-                                            Contact Zain Solutions and our team will be happy to support you.
+                                            {tServices('contactSupportText')}
                                         </p>
-                                        <h2><a href="tel:+96872720046">+968 7272 0046</a></h2>
+                                        <h2><a href="tel:+96872720046" dir="ltr">+968 7272 0046</a></h2>
                                         <h4><a href="mailto:info@zainom.com">info@zainom.com</a></h4>
-                                        <Link className="btn mt-30 circle btn-sm btn-gradient" href="/contact-us">Contact Us</Link>
+                                        <Link className="btn mt-30 circle btn-sm btn-gradient" href="/contact-us">{tCommon('contactUs')}</Link>
                                     </div>
                                 </div>
 

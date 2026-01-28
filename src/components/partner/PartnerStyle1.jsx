@@ -1,9 +1,12 @@
 "use client";
 import React from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Keyboard } from 'swiper/modules';
 
 const PartnerStyle1 = ({ sectionClass }) => {
+    const t = useTranslations('partner');
+    const locale = useLocale();
     // 6 rows in the partners.jpg image
     const partnerRows = [
         { id: 1, position: '-5%' },   // Row 1
@@ -21,14 +24,14 @@ const PartnerStyle1 = ({ sectionClass }) => {
                     <div className="row align-center">
                         <div className="col-lg-5">
                             <div className="partner-map" style={{ backgroundImage: `url(/assets/img/shape/map.png)` }}>
-                                <h2 className="mask-text" style={{ backgroundImage: `url(/assets/img/banner/113.jpg)` }}>Zain</h2>
-                                <h4 className="mb-0">Technology Partners</h4>
+                                <h2 className="mask-text" style={{ backgroundImage: `url(/assets/img/banner/113.jpg)` }}>{t('companyName')}</h2>
+                                <h4 className="mb-0">{t('technologyPartners')}</h4>
                                 
                             </div>
                         </div>
                         <div className="col-lg-6 offset-lg-1">
                             <div className="partner-items partner-map">
-                            <p className='mb-0'>Zain Solutions collaborates with a selected ecosystem of technology partners across infrastructure, cybersecurity, enterprise platforms, and digital transformation, ensuring solutions aligned with international standards and best practices.
+                            <p className='mb-0'>{t('partnersDescription')}
                             </p>
                             {/* <ul>
                                     <li><Image src={logo1} alt="Image Not FOund" /></li>
@@ -42,6 +45,9 @@ const PartnerStyle1 = ({ sectionClass }) => {
                                     <li><Image src={logo6} alt="Image Not FOund" /></li>
                                 </ul> */}
                                 <Swiper className="clients-style-two-carousel"
+                                style={{
+                                direction: 'ltr'
+                            }}
                                     modules={[Keyboard, Autoplay]}
                                     loop={true}
                                     spaceBetween={30}
@@ -59,9 +65,10 @@ const PartnerStyle1 = ({ sectionClass }) => {
                                         <SwiperSlide key={row.id}>
                                             <div 
                                                 className="partner-row-sprite"
+                                                dir="ltr"
                                                 style={{
                                                     backgroundImage: `url(/assets/img/logo/partners.jpg)`,
-                                                    backgroundPosition: `0% ${row.position}`,
+                                                    backgroundPosition: `100% ${row.position}`,
                                                     backgroundSize: '100% auto',
                                                     backgroundRepeat: 'no-repeat',
                                                     width: '100%',

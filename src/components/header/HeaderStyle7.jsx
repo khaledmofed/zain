@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import HeaderTopStyle4 from './HeaderTopStyle4';
 import MainHeaderStyle7 from './MainHeaderStyle7';

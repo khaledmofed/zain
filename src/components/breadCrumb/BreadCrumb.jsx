@@ -1,9 +1,15 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import breadCrumbThumb from '@/assets/img/shape/50.png';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
 
 const BreadCrumb = ({ breadCrumb, title }) => {
+    const t = useTranslations('common');
+    const locale = useLocale();
+    const isRTL = locale === 'ar';
+
     return (
         <>
             <div className="breadcrumb-area bg-cover shadow dark text-center text-light" style={{ 
@@ -18,8 +24,8 @@ const BreadCrumb = ({ breadCrumb, title }) => {
                         <div className="col-lg-12 col-md-12">
                             <h1>{title ? title : "Error 404"}</h1>
                             <ul className="breadcrumb">
-                                <li><Link href="/"><i className="fas fa-home"></i> Home</Link></li>
-                                <li className='ms-1'>{breadCrumb ? breadCrumb : "not-found"}</li>
+                                <li><Link href="/"><i className="fas fa-home"></i> {t('home')}</Link></li>
+                                <li className={isRTL ? 'me-1' : 'ms-1'}>{breadCrumb ? breadCrumb : "not-found"}</li>
                             </ul>
                         </div>
                     </div>

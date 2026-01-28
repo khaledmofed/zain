@@ -1,8 +1,9 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 
-const SingleProcess1 = ({ process }) => {
-    const { thumb, steps, title, text } = process
+const SingleProcess1 = ({ process, translatedTitle, translatedText }) => {
+    const { thumb, steps } = process
 
     return (
         <>
@@ -10,8 +11,8 @@ const SingleProcess1 = ({ process }) => {
                 <Image src={`/assets/img/about/${thumb}`} width={800} height={800} alt="Thumb" />
                 <span>{steps}</span>
             </div>
-            <h4>{title}</h4>
-            {/* <p>{text}</p> */}
+            <h4>{translatedTitle || process.title}</h4>
+            {/* <p>{translatedText || process.text}</p> */}
         </>
     );
 };

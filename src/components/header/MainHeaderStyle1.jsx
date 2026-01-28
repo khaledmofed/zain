@@ -3,15 +3,17 @@ import React from 'react';
 import MainMenu from './MainMenu';
 import ZainMenu from './ZainMenu';
 import HeaderLogo from './HeaderLogo';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import useStickyMenu from '../hooks/useStickyMenu';
 import useSubMenuToggle from '../hooks/useSubMenuToggle';
 import useSidebarMenu from '../hooks/useSidebarMenu';
 import Image from 'next/image';
 import logo from '@/assets/img/logo.png';
+import LanguageSwitcher from '../utilities/LanguageSwitcher';
 
 const MainHeaderStyle1 = () => {
-
+    const t = useTranslations('common');
     const isMenuSticky = useStickyMenu();
     const toggleSubMenu = useSubMenuToggle();
     const { isOpen, openMenu, closeMenu } = useSidebarMenu();
@@ -36,13 +38,15 @@ const MainHeaderStyle1 = () => {
                             </div>
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-7 col-7">
                                 <div className="attr-right">
+                                <LanguageSwitcher />
                                     <div className="attr-nav">
                                         <ul>
                                             <li className="button">
-                                                <Link href="/contact-us">Get consultant</Link>
+                                                <Link href="/contact-us">{t('getConsultant')}</Link>
                                             </li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>

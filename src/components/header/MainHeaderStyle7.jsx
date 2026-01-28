@@ -5,12 +5,14 @@ import useStickyMenu from '../hooks/useStickyMenu';
 import useSidebarMenu from '../hooks/useSidebarMenu';
 import HeaderLogo from './HeaderLogo';
 import useSubMenuToggle from '../hooks/useSubMenuToggle';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import logo from '@/assets/img/logo.png';
 import Image from 'next/image';
+import LanguageSwitcher from '../utilities/LanguageSwitcher';
 
 const MainHeaderStyle7 = () => {
-
+    const t = useTranslations('common');
     const isMenuSticky = useStickyMenu();
     const toggleSubMenu = useSubMenuToggle();
     const { isOpen, openMenu, closeMenu } = useSidebarMenu();
@@ -31,9 +33,10 @@ const MainHeaderStyle7 = () => {
                         <div className="attr-right">
                             <div className="attr-nav">
                                 <ul>
-                                    <li className="button"><Link href="/contact-us">Get consultant</Link></li>
+                                    <li className="button"><Link href="/contact-us">{t('getConsultant')}</Link></li>
                                 </ul>
                             </div>
+                            <LanguageSwitcher />
                         </div>
                     </div>
                     <div className={`overlay-screen ${isOpen ? "opened" : ""}`} onClick={closeMenu}></div>

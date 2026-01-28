@@ -2,9 +2,12 @@
 import React from 'react';
 import logo from '@/assets/img/zainlogo.png';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 const HeaderLogo = ({ openMenu }) => {
+    const t = useTranslations('common');
+
     return (
         <>
             <div className="navbar-header">
@@ -12,7 +15,7 @@ const HeaderLogo = ({ openMenu }) => {
                     <i className="fa fa-bars"></i>
                 </button>
                 <Link className="navbar-brand" href="/">
-                    <Image src={logo} className="logo" alt="Logo" /> <div className="logo-text">Zain <br /> Solutions</div> 
+                    <Image src={logo} className="logo" alt="Logo" /> <div className="logo-text">{t('companyNameLine1')} <br /> {t('companyNameLine2')}</div> 
                 </Link>
             </div>
         </>

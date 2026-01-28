@@ -1,11 +1,26 @@
+"use client";
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import SocialShareStyle3 from '../utilities/SocialShareStyle3';
 import Image from 'next/image';
 import SingleTeamList from './SingleTeamList';
 import SkillProgress from '../progress/SkillProgress';
 
 const TeamDetailsContent = ({ teamInfo }) => {
-    const { memberThumb, name, designation, email, memberData, skillProgress } = teamInfo
+    const t = useTranslations('team');
+    const { id, memberThumb, name, designation, email, memberData, skillProgress } = teamInfo;
+
+    // Map team ID to translation key
+    const teamKeyMap = {
+        1: "saif",
+        2: "waleed",
+        3: "abdulla",
+        4: "hamad"
+    };
+
+    const teamKey = teamKeyMap[id];
+    const translatedName = teamKey ? t(`members.${teamKey}.name`) : name;
+    const translatedDesignation = teamKey ? t(`members.${teamKey}.designation`) : designation;
 
     return (
         <>
@@ -19,8 +34,8 @@ const TeamDetailsContent = ({ teamInfo }) => {
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
-                                <h2>{[name]}</h2>
-                                <span>{[designation]}</span>
+                                <h2>{translatedName}</h2>
+                                <span>{translatedDesignation}</span>
                                 <p>
                                     Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring house in never fruit up. Pasture imagine my garrets..
                                 </p>
@@ -32,7 +47,7 @@ const TeamDetailsContent = ({ teamInfo }) => {
                                     </li>
                                     <li>
                                         <strong>Phone:</strong>
-                                        <a href="tel:+96872720046">+968 7272 0046</a>
+                                        <a href="tel:+96872720046" dir="ltr">+968 7272 0046</a>
                                     </li>
                                 </ul>
                                 <div className="social">

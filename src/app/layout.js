@@ -19,19 +19,14 @@ import '@/assets/css/helper.css';
 import '@/assets/css/unit-test.css';
 import '@/assets/css/style.css';
 
-import Dependency from '@/components/utilities/Dependency';
-import { ToastContainer } from 'react-toastify';
-
 export const metadata = {
-  title: "Zain - Consulting Business React - NextJS Template"
+  title: "Zain Solutions - Integrated Infrastructure & Digital Transformation Solutions"
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body style={{ fontFamily: "'Cabourg OT', sans-serif" }}>
-        <ToastContainer />
-        <Dependency />
+    <html suppressHydrationWarning>
+      <body suppressHydrationWarning>
         {children}
       </body>
     </html>

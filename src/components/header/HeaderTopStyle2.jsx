@@ -1,6 +1,10 @@
+"use client";
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 const HeaderTopStyle2 = () => {
+    const t = useTranslations('common');
+
     return (
         <>
             <div className="top-bar-area top-bar-style-two">
@@ -13,8 +17,8 @@ const HeaderTopStyle2 = () => {
                                         <i className="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div className="info">
-                                        <strong>Address</strong>
-                                        Zain Solutions, Muscat, Sultanate of Oman
+                                        <strong>{t('addressLabel')}</strong>
+                                        {t('fullAddress')}
                                     </div>
                                 </li>
                                 <li>
@@ -23,7 +27,7 @@ const HeaderTopStyle2 = () => {
                                     </div>
                                     <div className="info">
                                         <strong>Phone</strong>
-                                        <a href="tel:+96872720046">+968 7272 0046</a>
+                                        <a href="tel:+96872720046" dir="ltr">+968 7272 0046</a>
                                     </div>
                                 </li>
                             </ul>

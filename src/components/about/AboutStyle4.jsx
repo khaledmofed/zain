@@ -3,7 +3,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 import shape51 from '@/assets/img/shape/51.png'
 import about12thumb from '@/assets/img/about/12.jpg'
-import about5thumb from '@/assets/img/about/5.webp'
+import about5thumb from '@/assets/img/about/5.jpg'
 import signature from '@/assets/img/signature.png'
 import Animate from '../animation/Animate';
 import Counter from '../counter/Counter';

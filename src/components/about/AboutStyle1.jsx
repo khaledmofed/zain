@@ -1,15 +1,19 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import anim1Thumb from '@/assets/img/shape/anim-1.png'
 import anim2Thumb from '@/assets/img/shape/anim-2.png'
 import anim3Thumb from '@/assets/img/shape/anim-3.png'
 import anim4Thumb from '@/assets/img/shape/anim-4.png'
-import aboutThumb from "@/assets/img/about/pic2.png"
+import aboutThumb from "@/assets/img/about/about.jpg"
 import About1Card from './About1Card';
 import Animate from '../animation/Animate';
 
 const AboutStyle1 = ({ hideButton = false, showThirdParagraph = false }) => {
+    const t = useTranslations('about');
+
     return (
         <>
             <div className="about-style-one-area default-padding">
@@ -20,20 +24,17 @@ const AboutStyle1 = ({ hideButton = false, showThirdParagraph = false }) => {
                 <div className="container">
                     <div className="row align-center">
                         <div className="about-style-one col-xl-6 col-lg-5">
-                            <div className="h4 sub-heading">Company Overview</div>
-                            <h2 className="title mb-25">Zain Solutions<br />Integrated Infrastructure & Digital Transformation Solutions</h2>
-                            <p>
-                            Zain Solutions is an Omani technology company dedicated to enabling both the public and private sectors through integrated technology solutions that combine reliable infrastructure with intelligent digital transformation.
-                            </p>
-                            <p>
-                            Grounded in a deep understanding of the local market and its regulatory and operational context, the company applies global standards and best practices to deliver scalable solutions capable of regional and international deployment.                            </p>
+                            <div className="h4 sub-heading">{t('companyOverview')}</div>
+                            <h2 className="title mb-25" dangerouslySetInnerHTML={{ __html: t('mainTitle') }}></h2>
+                            <p>{t('paragraph1')}</p>
+                            <p>{t('paragraph2')}</p>
                             {showThirdParagraph && (
-                                <p>Zain Solutions adopts a long-term partnership approach, extending beyond technology delivery to support organizations in building secure, data-driven, and sustainable digital environments that enhance operational efficiency, decision-making, and institutional growth.</p>
+                                <p>{t('paragraph3')}</p>
                             )}
                             {!hideButton && (
                                 <div className="mt-30">
                                     <Link href="/about-us" className="btn circle btn-theme btn-md radius animation">
-                                        About Us
+                                        {t('title')}
                                     </Link>
                                 </div>
                             )}

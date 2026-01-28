@@ -1,8 +1,12 @@
+"use client";
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import Process2Data from '@/assets/jsonData/process/Process2Data.json'
 import SingleProcess2 from './SingleProcess2';
 
 const ProcessStyle2 = () => {
+    const t = useTranslations('process');
+    
     return (
         <>
             <div className="process-style-two-area text-center default-padding" style={{ backgroundImage: `url(/assets/img/shape/map-large.png)` }}>
@@ -11,8 +15,8 @@ const ProcessStyle2 = () => {
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="site-heading text-center">
-                                <h4 className="sub-heading">What Sets Us Apart</h4>
-                                <h2 className="title">Key Differentiators</h2>
+                                <h4 className="sub-heading">{t('whatSetsUsApart')}</h4>
+                                <h2 className="title">{t('keyDifferentiators')}</h2>
                                 <div className="devider"></div>
                             </div>
                         </div>

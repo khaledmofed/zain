@@ -1,12 +1,15 @@
 "use client"
 import React from 'react';
 import SocialShare from '../utilities/SocialShare';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import logoLightBlue from "@/assets/img/logo-light-blue.png"
 import { toast } from 'react-toastify';
 import Image from 'next/image';
 
 const SidebarInfo = ({ closeInfoBar, isInfoOpen, openInfoBar, searchOpen }) => {
+    const t = useTranslations('common');
+    const tContact = useTranslations('contact');
 
     const handleSubscribe = (event) => {
         event.preventDefault()
@@ -37,7 +40,7 @@ const SidebarInfo = ({ closeInfoBar, isInfoOpen, openInfoBar, searchOpen }) => {
                         <Image src={logoLightBlue} alt="Logo" />
                     </div>
                     <p>
-                        Zain Solutions is a digital consulting firm based in Muscat, serving clients across the region.
+                        {tContact('description')}
                     </p>
                 </div>
                 <div className="widget address">
@@ -45,20 +48,20 @@ const SidebarInfo = ({ closeInfoBar, isInfoOpen, openInfoBar, searchOpen }) => {
                         <ul>
                             <li>
                                 <div className="content">
-                                    <p>Address</p>
-                                    <strong>Muscat, Sultanate of Oman</strong>
+                                    <p>{t('addressLabel')}</p>
+                                    <strong>{t('address')}</strong>
                                 </div>
                             </li>
                             <li>
                                 <div className="content">
-                                    <p>Email</p>
+                                    <p>{t('email')}</p>
                                     <a href="mailto:info@zainom.com"><strong>info@zainom.com</strong></a>
                                 </div>
                             </li>
                             <li>
                                 <div className="content">
-                                    <p>Contact</p>
-                                    <a href="tel:+96872720046"> <strong>+968 7272 0046</strong></a>
+                                    <p>{t('contact')}</p>
+                                    <a href="tel:+96872720046" dir="ltr"> <strong>+968 7272 0046</strong></a>
                                 </div>
                             </li>
                         </ul>

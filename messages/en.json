@@ -1,0 +1,734 @@
+{
+  "common": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "blogs": "Blogs",
+    "contactUs": "Contact Us",
+    "getConsultant": "Get in touch",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "addressLabel": "Address",
+    "address": "Muscat, Sultanate of Oman",
+    "fullAddress": "Zain Solutions, Muscat, Sultanate of Oman",
+    "needHelp": "Need Help?",
+    "allRightsReserved": "All Rights Reserved",
+    "copyright": "Copyright",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "support": "Support",
+    "companyName": "Zain Solutions",
+    "companyNameLine1": "Zain",
+    "companyNameLine2": "Solutions",
+    "zainInfra": "Zain Infra",
+    "zainDX": "Zain DX",
+    "siteTitle": "Zain Solutions - Integrated Infrastructure & Digital Transformation Solutions",
+    "requestCallBack": "Request a Call back",
+    "readyToTransform": "Ready to Transform Your Business?",
+    "buildDigitalFuture": "Let's Build Your Digital Future Together."
+  },
+  "process": {
+    "solutionsPortfolio": "Our Solutions Portfolio",
+    "projectsProducts": "Projects & Products",
+    "projectsDescription": "Zain Solutions has delivered a wide range of projects across the public and private sectors, covering infrastructure, security, enterprise systems, automation, and advanced analytics. The company has also developed customizable platforms and solutions, including:",
+    "whatSetsUsApart": "What Sets Us Apart",
+    "keyDifferentiators": "Key Differentiators",
+    "differentiators": {
+      "integratedDelivery": "Integrated delivery across infrastructure and digital transformation",
+      "localExpertise": "Strong local expertise aligned with global standards",
+      "secureScalable": "Secure, scalable, and compliance-driven solutions",
+      "strategicPartnership": "Strategic partnership mindset focused on long-term value"
+    },
+    "items": {
+      "mis": {
+        "title": "Management Information Systems (MIS)",
+        "text": "Comprehensive enterprise systems for reporting, alerts, and governance support enabling data-driven decision-making."
+      },
+      "automation": {
+        "title": "Intelligent Automation Solutions",
+        "text": "Advanced RPA and AI-powered automation that streamline processes and eliminate manual tasks across departments."
+      },
+      "analytics": {
+        "title": "Analytics and BI Platforms",
+        "text": "Powerful dashboards, KPIs, and predictive analytics that unlock insights and drive strategic business decisions."
+      },
+      "portals": {
+        "title": "Enterprise Portals and Digital Applications",
+        "text": "Custom web platforms and intelligent applications tailored to enhance customer engagement and operational efficiency."
+      }
+    }
+  },
+  "choose": {
+    "industriesWeServe": "Industries We Serve",
+    "industriesDescription": "Zain Solutions supports a broad range of industries with tailored solutions aligned to sector-specific operational and regulatory needs:",
+    "companyName": "Zain",
+    "industries": {
+      "government": "Government & Public Sector",
+      "banking": "Banking & Financial Services",
+      "oilGas": "Oil, Gas, Energy & Utilities",
+      "industry": "Industry & Manufacturing",
+      "logistics": "Logistics & Transportation",
+      "healthcare": "Healthcare",
+      "education": "Education & Training",
+      "hospitality": "Hospitality & Tourism",
+      "retail": "Retail & Commerce",
+      "construction": "Construction & Infrastructure",
+      "enterprises": "Enterprises & SMEs"
+    }
+  },
+  "partner": {
+    "technologyPartners": "Technology Partners",
+    "partnersDescription": "Zain Solutions collaborates with a selected ecosystem of technology partners across infrastructure, cybersecurity, enterprise platforms, and digital transformation, ensuring solutions aligned with international standards and best practices.",
+    "trustedByClients": "Trusted by <br/> our Clients",
+    "companyName": "Zain"
+  },
+  "team": {
+    "teamMembers": "Team Members",
+    "meetOurExperts": "Meet our experts",
+    "members": {
+      "saif": {
+        "name": "Saif Al Busaidi",
+        "designation": "Chief Executive Officer"
+      },
+      "waleed": {
+        "name": "Waleed Jouda",
+        "designation": "Digital Business Leader"
+      },
+      "abdulla": {
+        "name": "Abdulla Nijim",
+        "designation": "Digital Marketing Expert"
+      },
+      "hamad": {
+        "name": "Hamad Al Hadhrami",
+        "designation": "Administrative Affairs"
+      }
+    }
+  },
+  "project": {
+    "popularProjects": "Popular Projects",
+    "recentCompletedProjects": "Our most recent Completed Projects",
+    "items": {
+      "strawberryGarden": {
+        "tag": "Web Development",
+        "title": "Strawberry Garden",
+        "text": "Strawberry Garden is a fully integrated destination in Wilayat Barka, Oman, combining modern agriculture with family entertainment. Through advanced solutions and intelligent design, it transforms climatic challenges into opportunities, creating an immersive experience where technology meets nature.",
+        "btnText": "View Project"
+      },
+      "businessProgramManagement": {
+        "tag": "Partnership",
+        "title": "Business Program Management",
+        "text": "Strawberry Garden is a fully integrated destination in Wilayat Barka, Oman, combining modern agriculture with family entertainment. Through advanced solutions and intelligent design, it transforms climatic challenges into opportunities, creating an immersive experience where technology meets nature.",
+        "btnText": "View Project"
+      }
+    }
+  },
+  "blog": {
+    "latestBlog": "Latest Blog",
+    "blogsNews": "Blogs & News",
+    "common": {
+      "by": "By",
+      "readMore": "Read More",
+      "recentPost": "Recent Post"
+    },
+    "items": {
+      "1": {
+        "title": "Announcing if attachment resolution sentiments.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "john Baus"
+      },
+      "2": {
+        "title": "Minuter him own clothes but observe country.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "Admin"
+      },
+      "3": {
+        "title": "Overcame breeding point concerns has terminate",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "john Baus"
+      },
+      "4": {
+        "title": "Clothes but observe country at the maintaining.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "Istiak Ahmed"
+      },
+      "5": {
+        "title": "Breeding point concerns has terminate the hole.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "Admin"
+      },
+      "6": {
+        "title": "Minuter him own clothes the maintaining of patient.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "john Baus"
+      },
+      "7": {
+        "title": "Minuter him own clothes but observe country.",
+        "text": "Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now",
+        "author": "Admin"
+      }
+    }
+  },
+  "achievement": {
+    "projectsDelivered": "Projects delivered across public and private sectors",
+    "clientsServed": "Clients served with integrated solutions"
+  },
+  "home": {
+    "title": "Zain Solutions",
+    "subtitle": "Integrated Infrastructure & Digital Transformation Solutions",
+    "title1": "Integrated Infrastructure",
+    "title2": "& Digital Transformation",
+    "aboutButton": "About Us",
+    "banner1": {
+      "title": "Zain Solutions",
+      "title1": "Integrated Infrastructure",
+      "title2": "& Digital Transformation"
+    },
+    "banner2": {
+      "title": "Secure. Intelligent. Scalable.",
+      "title1": "Automation, Data",
+      "title2": "& AI-Driven Solutions"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "breadcrumb": "About Us",
+    "consultingSuccess": "Consulting Success",
+    "worldwideClients": "Worldwide Clients",
+    "companyOverview": "Company Overview",
+    "mainTitle": "Zain Solutions<br />Integrated Infrastructure & Digital Transformation Solutions",
+    "yearsExperienceLabel": "Years experience",
+    "visionTitle": "Vision",
+    "visionText": "To become a trusted technical reference enabling the public <br/> and private sectors to build integrated digital ecosystems, <br/> grounded in deep local market understanding and capable of scaling <br/> and competing regionally and globally.",
+    "missionTitle": "Mission",
+    "missionText": "To deliver integrated technology solutions that combine reliable infrastructure with intelligent digital transformation, supporting the public and private sectors with practical expertise and clear standards to enable informed technology decisions and the development of secure, efficient, and sustainable digital environments.",
+    "paragraph1": "Zain Solutions is an Omani technology company delivering integrated solutions for government entities and enterprises across the Sultanate of Oman and the region, combining secure infrastructure and enterprise systems with digital transformation, automation, and artificial intelligence.",
+    "paragraph2": "The company operates through a clear model built around two fully integrated Business Units, ensuring unified accountability, faster delivery, and consistent quality across the full project lifecycle, from planning and design to implementation, operations, and continuous optimization.",
+    "paragraph3": "Zain Solutions adopts a long-term partnership approach, extending beyond technology delivery to support organizations in building secure, data-driven, and sustainable digital environments that enhance operational efficiency, decision-making, and institutional growth."
+  },
+  "services": {
+    "title": "Services",
+    "breadcrumb": "Services",
+    "businessModel": "Business Model",
+    "twoUnits": "Two Specialized Business Units Delivering Integrated Solutions",
+    "zainInfra": "Zain Infra",
+    "zainDX": "Zain DX",
+    "businessUnits": "Business Units",
+    "operatesThroughTwoUnits": "Zain Solutions operates through two specialized Business Units:",
+    "thisModelProvides": "This model provides:",
+    "servicesLabel": "Services:",
+    "valueDelivered": "Value Delivered:",
+    "contactSupportText": "Contact Zain Solutions and our team will be happy to support you.",
+    "businessUnitsData": {
+      "zainInfra": {
+        "title": "Zain Infra",
+        "subtitle": "Infrastructure, Systems & Security"
+      },
+      "zainDX": {
+        "title": "Zain DX",
+        "subtitle": "Digital Transformation & Intelligent Solutions"
+      }
+    },
+    "modelProvides": {
+      "clearAccountability": "Clear accountability and governance",
+      "reducedComplexity": "Reduced operational complexity",
+      "endToEndDelivery": "End-to-end delivery \"from foundation to intelligence\"",
+      "flexibleScalability": "Flexible scalability based on project requirements"
+    },
+    "zainInfraUnit": {
+      "unitTitle": "Infrastructure, Systems & Security Business Unit",
+      "unitDescription": "Zain Infra is responsible for designing, building, and operating secure, resilient, and scalable technology foundations that support daily enterprise operations.",
+      "valueDelivered": "Reliable and secure foundations that enable successful digital transformation initiatives.",
+      "btnText": "Learn More",
+      "services": {
+        "itInfrastructure": {
+          "title": "IT Infrastructure",
+          "text": "Enterprise networking, data centers, cloud readiness"
+        },
+        "systemsIntegration": {
+          "title": "Systems & Hardware Integration",
+          "text": "System integration, interoperability, environment management"
+        },
+        "cybersecurity": {
+          "title": "Cybersecurity & Physical Security",
+          "text": "Network/system security, surveillance and access control, compliance support"
+        },
+        "businessContinuity": {
+          "title": "Business Continuity & Managed Services",
+          "text": "UPS, managed services, operational support"
+        }
+      }
+    },
+    "zainDXUnit": {
+      "unitTitle": "Digital Transformation & Intelligent Solutions Business Unit",
+      "unitDescription": "Zain DX drives digital innovation, enabling organizations to move from traditional operating models to intelligent, automated, and data-driven enterprises.",
+      "valueDelivered": "Improved efficiency, smarter decision-making, and accelerated digital maturity.",
+      "btnText": "Learn More",
+      "services": {
+        "digitalTransformation": {
+          "title": "Digital Transformation & Automation",
+          "text": "Process analysis, workflow automation, RPA, AI solutions"
+        },
+        "mis": {
+          "title": "Management Information Systems (MIS)",
+          "text": "Enterprise systems, reporting & alerts, governance support"
+        },
+        "dataAnalytics": {
+          "title": "Data Analytics & Business Intelligence",
+          "text": "Dashboards, KPIs, predictive and prescriptive analytics"
+        },
+        "digitalConsulting": {
+          "title": "Digital & Strategic Consulting",
+          "text": "Transformation roadmaps, process optimization, program/project governance"
+        },
+        "platforms": {
+          "title": "Platforms & Applications",
+          "text": "Enterprise web platforms, intelligent applications, tailored digital solutions"
+        }
+      },
+      "integratedApproach": {
+        "title": "Integrated Delivery Approach",
+        "description": "Zain Solutions ensures seamless integration between Zain Infra and Zain DX so that every engagement:",
+        "points": {
+          "foundation": "Starts with a secure and resilient foundation",
+          "governance": "Operates under unified governance and accountability",
+          "enhanced": "It is enhanced with automation, analytics, and intelligence",
+          "evolves": "Evolves continuously to maximize long-term value"
+        },
+        "conclusion": "Clients engage with one company and receive a fully integrated solution."
+      }
+    }
+  },
+  "blogs": {
+    "title": "Blogs",
+    "breadcrumb": "Blogs",
+    "readMore": "Read More"
+  },
+  "blogSingle": {
+    "breadcrumb": "Blog Single",
+    "tags": "Tags:",
+    "share": "Share:",
+    "previousPost": "Previous Post",
+    "nextPost": "Next Post",
+    "noTitle": "No Title",
+    "postAuthor": {
+      "name": "Waleed Jouda",
+      "description": "Digital Business Leader at Zain Solutions, specializing in digital transformation and intelligent solutions. With extensive experience in process automation, data analytics, and enterprise systems, Waleed leads initiatives that drive operational efficiency and digital maturity for organizations across the region."
+    },
+    "items": {
+      "1": {
+        "paragraph1": "Zain Solutions delivers integrated technology solutions that combine reliable infrastructure with intelligent digital transformation. Through a deep understanding of local market requirements and global best practices, we enable organizations to make informed technology decisions and build secure, efficient, and sustainable digital environments.",
+        "paragraph2": "Our approach extends beyond technology delivery to support organizations in developing sustainable digital ecosystems. We focus on enhancing operational efficiency, improving decision-making quality, and supporting institutional growth through secure, data-driven solutions.",
+        "blockquote": "Integrated delivery across infrastructure and digital transformation ensures that every engagement starts with a secure foundation, operates under unified governance, and evolves continuously to maximize long-term value.",
+        "paragraph3": "Zain Solutions operates through two fully integrated Business Units: Zain Infra and Zain DX. This model provides clear accountability, reduced operational complexity, and end-to-end delivery from foundation to intelligence, ensuring flexible scalability based on project requirements.",
+        "heading": "Why Choose Integrated Solutions?",
+        "listItems": [
+          "Unified accountability and governance",
+          "Reduced operational complexity",
+          "End-to-end delivery from foundation to intelligence",
+          "Flexible scalability based on project requirements",
+          "Long-term measurable value"
+        ],
+        "paragraph4": "By combining infrastructure expertise with digital transformation capabilities, Zain Solutions serves as a trusted technology partner capable of supporting organizations throughout their digital journey. Our practical, scalable, and standards-aligned approach ensures stability, compliance, and sustainable growth."
+      },
+      "2": {
+        "paragraph1": "Zain Solutions brings strong local expertise aligned with global standards, ensuring solutions that are both contextually relevant and internationally competitive. Our deep understanding of the Omani market and its regulatory requirements enables us to deliver solutions that meet local needs while maintaining global best practices.",
+        "paragraph2": "We apply international standards and proven methodologies while respecting local market dynamics and operational contexts. This balance ensures that our solutions are not only technically sound but also culturally and operationally appropriate for the organizations we serve.",
+        "blockquote": "Strong local expertise combined with global standards creates solutions that are both contextually relevant and internationally competitive, enabling organizations to compete effectively in regional and global markets.",
+        "paragraph3": "Our team's local knowledge spans regulatory compliance, operational requirements, and cultural considerations, while our global perspective ensures access to cutting-edge technologies and international best practices.",
+        "heading": "Local Expertise, Global Standards",
+        "listItems": [
+          "Deep understanding of local market dynamics",
+          "Regulatory compliance expertise",
+          "Access to global best practices",
+          "International technology partnerships",
+          "Regional and global scalability"
+        ],
+        "paragraph4": "This combination of local insight and global perspective positions Zain Solutions as a unique partner capable of delivering solutions that are both locally relevant and globally competitive."
+      },
+      "3": {
+        "paragraph1": "Security, scalability, and compliance are fundamental to every solution we deliver. Zain Solutions designs and implements technology solutions with these principles at the core, ensuring that organizations can operate securely, scale effectively, and maintain compliance with relevant regulations and standards.",
+        "paragraph2": "Our security-first approach encompasses network security, data protection, access control, and compliance support. We implement industry-standard security measures and help organizations navigate complex regulatory requirements while building scalable infrastructure that can grow with their needs.",
+        "blockquote": "Secure, scalable, and compliance-driven solutions form the foundation of successful digital transformation, enabling organizations to innovate confidently while maintaining security and regulatory compliance.",
+        "paragraph3": "From infrastructure design to digital transformation initiatives, security and compliance considerations are integrated into every stage of our engagement, ensuring that solutions are not only effective but also secure and compliant.",
+        "heading": "Security, Scalability, and Compliance",
+        "listItems": [
+          "Network and system security",
+          "Data protection and access control",
+          "Regulatory compliance support",
+          "Scalable infrastructure design",
+          "Continuous security monitoring"
+        ],
+        "paragraph4": "By prioritizing security, scalability, and compliance, we help organizations build technology foundations that support both current operations and future growth while maintaining the highest standards of security and regulatory compliance."
+      },
+      "4": {
+        "paragraph1": "Zain Solutions adopts a strategic partnership mindset focused on long-term value creation. Rather than viewing engagements as one-time transactions, we build lasting relationships that evolve with our clients' needs, supporting them through their entire digital transformation journey.",
+        "paragraph2": "Our partnership approach extends beyond technology delivery to include strategic consulting, ongoing support, and continuous optimization. We work closely with organizations to understand their long-term goals and align our solutions accordingly, ensuring sustained value over time.",
+        "blockquote": "A strategic partnership mindset focused on long-term value ensures that technology investments deliver sustained benefits, supporting organizations through their entire digital transformation journey and beyond.",
+        "paragraph3": "We invest in understanding our clients' business objectives, operational challenges, and strategic priorities, enabling us to deliver solutions that not only address immediate needs but also support long-term growth and success.",
+        "heading": "Building Long-Term Value",
+        "listItems": [
+          "Strategic consulting and planning",
+          "Ongoing support and optimization",
+          "Long-term relationship building",
+          "Continuous value delivery",
+          "Alignment with business objectives"
+        ],
+        "paragraph4": "This partnership approach ensures that organizations receive not just technology solutions, but a trusted partner committed to their long-term success and digital maturity."
+      },
+      "5": {
+        "paragraph1": "Integrated delivery across infrastructure and digital transformation is a core strength of Zain Solutions. By combining Zain Infra and Zain DX capabilities, we ensure seamless integration from foundational infrastructure to intelligent digital solutions.",
+        "paragraph2": "This integrated approach means that every engagement benefits from unified governance, clear accountability, and consistent quality across the entire project lifecycle. Organizations work with one partner who understands both infrastructure and digital transformation needs.",
+        "blockquote": "Integrated delivery ensures that infrastructure and digital transformation work together seamlessly, creating solutions that are more effective, efficient, and valuable than separate initiatives.",
+        "paragraph3": "From initial planning through implementation, operations, and continuous optimization, our integrated model ensures that infrastructure and digital transformation initiatives are aligned and mutually reinforcing.",
+        "heading": "The Power of Integration",
+        "listItems": [
+          "Seamless infrastructure and digital transformation integration",
+          "Unified governance and accountability",
+          "Consistent quality across project lifecycle",
+          "Single partner for all technology needs",
+          "End-to-end delivery from foundation to intelligence"
+        ],
+        "paragraph4": "This integrated delivery model enables organizations to achieve better outcomes faster, with reduced complexity and increased value compared to working with multiple vendors."
+      },
+      "6": {
+        "paragraph1": "Zain Solutions empowers organizations to build integrated digital systems that combine reliable infrastructure with intelligent digital transformation. Our solutions enable public and private sector entities to make informed technology decisions and develop secure, efficient, and sustainable digital environments.",
+        "paragraph2": "Through practical expertise and clear standards, we support organizations in enhancing operational efficiency, improving decision-making quality, and achieving institutional growth. Our approach focuses on real operational needs and long-term value creation.",
+        "blockquote": "Empowering organizations to build integrated digital systems requires a combination of technical expertise, practical experience, and a deep understanding of operational needs and strategic objectives.",
+        "paragraph3": "We work closely with our clients to understand their unique challenges and opportunities, developing customized solutions that address their specific needs while maintaining scalability and alignment with best practices.",
+        "heading": "Empowering Digital Transformation",
+        "listItems": [
+          "Customized solutions for unique needs",
+          "Practical expertise and clear standards",
+          "Operational efficiency enhancement",
+          "Informed technology decision-making",
+          "Sustainable digital environment development"
+        ],
+        "paragraph4": "By empowering organizations with the right technology solutions and strategic guidance, we help them achieve their digital transformation goals and build capabilities that support long-term success."
+      },
+      "7": {
+        "paragraph1": "Zain Solutions delivers integrated technology solutions that span from foundational infrastructure to intelligent data-driven systems. Our comprehensive approach ensures that organizations receive complete solutions that address both immediate operational needs and long-term strategic objectives.",
+        "paragraph2": "Through our clear operating model that unifies Zain Infra and Zain DX, we provide a technology partner capable of supporting organizations from establishing their technical foundation to enabling intelligence and data-driven decision-making.",
+        "blockquote": "From foundation to intelligence, integrated technology solutions enable organizations to build comprehensive digital capabilities that support both current operations and future innovation.",
+        "paragraph3": "Our solutions are designed to be practical, scalable, and aligned with both local and international standards, ensuring that organizations can deploy them effectively while maintaining the flexibility to adapt and grow.",
+        "heading": "From Foundation to Intelligence",
+        "listItems": [
+          "Foundational infrastructure establishment",
+          "Digital transformation enablement",
+          "Data-driven intelligence development",
+          "Practical and scalable solutions",
+          "Local and international standards alignment"
+        ],
+        "paragraph4": "This comprehensive approach ensures that organizations receive not just technology solutions, but a complete digital transformation partner that supports them from initial foundation through advanced intelligence and analytics."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "breadcrumb": "Contact Us",
+    "getInTouch": "Get In Touch",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit",
+    "description": "Zain Solutions, your trusted digital consulting partner in Muscat, Sultanate of Oman.",
+    "addressLine1": "Zain Solutions",
+    "addressLine2": "Muscat, Sultanate of Oman"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "breadcrumb": "Terms",
+    "zainInfraDescription": "Infrastructure, Systems & Security services including enterprise networking, data centers, cloud readiness, system integration, cybersecurity, and managed services.",
+    "zainDXDescription": "Digital Transformation & Intelligent Solutions including process automation, MIS/ERP systems, data analytics, digital consulting, and platform development.",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "paragraph1": "Welcome to Zain Solutions. These Terms of Service (\"Terms\") govern your access to and use of our website, services, and solutions. By accessing or using our services, you agree to be bound by these Terms.",
+        "paragraph2": "Zain Solutions is an Omani technology company providing integrated infrastructure and digital transformation solutions. Our services include IT infrastructure, cybersecurity, enterprise systems, digital transformation, automation, and data analytics."
+      },
+      "servicesDescription": {
+        "title": "2. Services Description",
+        "paragraph1": "Zain Solutions operates through two integrated Business Units:",
+        "paragraph2": "All services are provided in accordance with applicable laws and regulations of the Sultanate of Oman and international standards."
+      },
+      "serviceAgreements": {
+        "title": "3. Service Agreements",
+        "paragraph": "Specific service terms, deliverables, timelines, and pricing will be detailed in separate service agreements or statements of work (SOW) executed between Zain Solutions and the client. These Terms serve as a general framework and may be supplemented by specific contractual terms."
+      },
+      "intellectualProperty": {
+        "title": "4. Intellectual Property",
+        "paragraph": "All intellectual property rights in our services, solutions, methodologies, and proprietary technologies remain the property of Zain Solutions unless otherwise specified in a written agreement. Clients retain ownership of their data and business processes."
+      },
+      "dataProtection": {
+        "title": "5. Data Protection and Security",
+        "paragraph": "Zain Solutions is committed to protecting client data and information. We implement industry-standard security measures and comply with applicable data protection regulations. Detailed data handling practices are outlined in our Privacy Policy."
+      },
+      "limitationLiability": {
+        "title": "6. Limitation of Liability",
+        "paragraph": "To the maximum extent permitted by law, Zain Solutions' liability for any claims arising from our services is limited to the fees paid for the specific service in question. We are not liable for indirect, consequential, or incidental damages."
+      },
+      "compliance": {
+        "title": "7. Compliance and Standards",
+        "paragraph": "Our services are designed to align with international standards and best practices while respecting local regulatory requirements. Clients are responsible for ensuring their use of our services complies with applicable laws and regulations in their jurisdiction."
+      },
+      "modifications": {
+        "title": "8. Modifications to Terms",
+        "paragraph": "Zain Solutions reserves the right to modify these Terms at any time. Material changes will be communicated to clients through appropriate channels. Continued use of our services after such modifications constitutes acceptance of the updated Terms."
+      },
+      "contact": {
+        "title": "9. Contact Information",
+        "paragraph": "For questions regarding these Terms of Service, please contact us:",
+        "email": "Email: info@zainom.com",
+        "phone": "Phone:",
+        "website": "Website: www.zainom.com",
+        "lastUpdated": "Last Updated: January 2026"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "breadcrumb": "Privacy",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "paragraph1": "Zain Solutions (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you interact with our website, services, or solutions.",
+        "paragraph2": "As an Omani technology company providing integrated infrastructure and digital transformation solutions, we understand the importance of data protection and privacy in today's digital environment."
+      },
+      "informationWeCollect": {
+        "title": "2. Information We Collect",
+        "paragraph": "We may collect the following types of information:",
+        "items": {
+          "contactInfo": "Contact Information: Name, email address, phone number, company name, and job title when you inquire about our services or subscribe to our communications.",
+          "businessInfo": "Business Information: Information about your organization, industry, and technology requirements relevant to service delivery.",
+          "technicalInfo": "Technical Information: IP address, browser type, device information, and website usage data collected through cookies and similar technologies.",
+          "serviceData": "Service Data: Information and data provided by clients in the course of service delivery, which is handled according to specific service agreements."
+        }
+      },
+      "howWeUse": {
+        "title": "3. How We Use Your Information",
+        "paragraph": "We use collected information for the following purposes:",
+        "items": [
+          "To provide, maintain, and improve our services and solutions",
+          "To respond to inquiries and communicate with clients and prospects",
+          "To deliver technical support and managed services",
+          "To comply with legal obligations and regulatory requirements",
+          "To enhance security and prevent fraud or unauthorized access",
+          "To send relevant updates, newsletters, and marketing communications (with your consent)"
+        ]
+      },
+      "dataSecurity": {
+        "title": "4. Data Security",
+        "paragraph1": "Zain Solutions implements comprehensive security measures to protect your information, including:",
+        "items": [
+          "Encryption of data in transit and at rest",
+          "Access controls and authentication mechanisms",
+          "Regular security assessments and monitoring",
+          "Compliance with industry standards and best practices",
+          "Secure infrastructure and network protection"
+        ],
+        "paragraph2": "Despite our efforts, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security but are committed to maintaining high standards of data protection."
+      },
+      "dataSharing": {
+        "title": "5. Data Sharing and Disclosure",
+        "paragraph": "We do not sell your personal information. We may share information in the following circumstances:",
+        "items": {
+          "serviceProviders": "Service Providers: With trusted technology partners and vendors who assist in service delivery, subject to confidentiality agreements",
+          "legalRequirements": "Legal Requirements: When required by law, court order, or regulatory authority",
+          "businessTransfers": "Business Transfers: In connection with mergers, acquisitions, or asset sales, with appropriate notice",
+          "withConsent": "With Consent: When you have provided explicit consent for specific sharing arrangements"
+        }
+      },
+      "clientData": {
+        "title": "6. Client Data in Service Delivery",
+        "paragraph1": "When providing infrastructure, digital transformation, or managed services, we handle client data according to:",
+        "items": [
+          "Specific service agreements and statements of work",
+          "Client-defined data handling requirements",
+          "Industry-specific compliance standards",
+          "Our internal security and privacy policies"
+        ],
+        "paragraph2": "Client data remains the property of the client, and we act as a data processor in accordance with agreed terms."
+      },
+      "cookies": {
+        "title": "7. Cookies and Tracking Technologies",
+        "paragraph": "Our website uses cookies and similar technologies to enhance user experience, analyze website traffic, and improve our services. You can control cookie preferences through your browser settings. Some website features may not function properly if cookies are disabled."
+      },
+      "yourRights": {
+        "title": "8. Your Rights",
+        "paragraph": "Depending on applicable laws, you may have the right to:",
+        "items": [
+          "Access and receive a copy of your personal information",
+          "Request correction of inaccurate or incomplete information",
+          "Request deletion of your personal information (subject to legal and contractual obligations)",
+          "Object to or restrict certain processing activities",
+          "Withdraw consent where processing is based on consent",
+          "Lodge a complaint with relevant data protection authorities"
+        ]
+      },
+      "dataRetention": {
+        "title": "9. Data Retention",
+        "paragraph": "We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, comply with legal obligations, resolve disputes, and enforce our agreements. Client service data is retained according to specific service agreements and applicable regulations."
+      },
+      "internationalTransfers": {
+        "title": "10. International Data Transfers",
+        "paragraph": "As a company operating in the Sultanate of Oman with potential regional and international service delivery, we may transfer data across borders. Such transfers are conducted with appropriate safeguards and in compliance with applicable data protection laws."
+      },
+      "childrenPrivacy": {
+        "title": "11. Children's Privacy",
+        "paragraph": "Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately."
+      },
+      "updates": {
+        "title": "12. Updates to This Privacy Policy",
+        "paragraph": "We may update this Privacy Policy periodically to reflect changes in our practices, services, or legal requirements. Material changes will be communicated through our website or direct notification. We encourage you to review this policy regularly."
+      },
+      "contact": {
+        "title": "13. Contact Us",
+        "paragraph": "For questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:",
+        "email": "Email: info@zainom.com",
+        "phone": "Phone:",
+        "website": "Website: www.zainom.com",
+        "lastUpdated": "Last Updated: January 2026"
+      }
+    }
+  },
+  "zainInfra": {
+    "title": "Zain Infra - Infrastructure, Systems & Security",
+    "breadcrumb": "Zain Infra",
+    "subHeading": "Zain Infra",
+    "mainTitle": "Infrastructure, Systems & Security Business Unit",
+    "unitRole": "Unit Role",
+    "unitRoleText": "Zain Infra is responsible for establishing and operating the core technology foundations that support day-to-day and mission-critical operations, with a focus on stability, security, and scalability.",
+    "introText": "Zain Solutions operates through two fully integrated Business Units under a single organizational umbrella, ensuring clear accountability, unified contracting, and seamless execution.",
+    "serviceStructure": "Service Structure",
+    "services": {
+      "coreInfrastructure": {
+        "title": "Core Infrastructure Services",
+        "items": [
+          "Enterprise network design and implementation (LAN / WAN / WLAN)",
+          "Data centers and infrastructure environments",
+          "Cloud readiness and hybrid infrastructures",
+          "Enterprise connectivity and communication systems"
+        ]
+      },
+      "systemsIntegration": {
+        "title": "Systems & Environment Integration",
+        "items": [
+          "Enterprise systems and application integration",
+          "Multi-vendor hardware and infrastructure interoperability",
+          "Management of complex IT environments",
+          "Performance and operational stability optimization"
+        ]
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity & Information Protection",
+        "items": [
+          "Network and system security",
+          "Data protection and access control",
+          "Security risk assessment and mitigation",
+          "Compliance and regulatory support"
+        ]
+      },
+      "physicalSecurity": {
+        "title": "CCTV & Physical Security Systems",
+        "items": [
+          "Site assessment and risk analysis",
+          "Indoor and outdoor surveillance system design",
+          "Centralized recording and storage systems",
+          "Intelligent video analytics and monitoring",
+          "Integration with access control and alarm systems"
+        ]
+      },
+      "businessContinuity": {
+        "title": "Business Continuity & Managed Services",
+        "items": [
+          "Power continuity and UPS solutions",
+          "Managed IT services",
+          "System monitoring and incident response",
+          "Continuous technical and operational support"
+        ]
+      }
+    }
+  },
+  "zainDX": {
+    "title": "Zain DX - Digital Transformation & Intelligent Solutions",
+    "breadcrumb": "Zain DX",
+    "subHeading": "Zain DX",
+    "mainTitle": "Digital Transformation & Intelligent Solutions Business Unit",
+    "unitRole": "Unit Role",
+    "unitRoleText": "Zain DX focuses on transforming technology from an operational tool into a strategic enabler through automation, data, and advanced enterprise systems.",
+    "introText": "Zain Solutions operates through two fully integrated Business Units under a single organizational umbrella, ensuring clear accountability, unified contracting, and seamless execution.",
+    "serviceStructure": "Service Structure",
+    "services": {
+      "digitalTransformation": {
+        "title": "Digital Transformation & Automation",
+        "items": [
+          "Business process analysis and assessment",
+          "Business process reengineering (BPR)",
+          "Operational workflow automation",
+          "RPA and AI-driven solutions"
+        ]
+      },
+      "enterpriseSystems": {
+        "title": "Enterprise Systems (MIS & ERP)",
+        "items": [
+          "Management Information Systems (MIS) design and development",
+          "ERP system implementation and customization",
+          "Enterprise process unification",
+          "Integration with existing systems"
+        ]
+      },
+      "governance": {
+        "title": "Governance, Risk & Compliance",
+        "items": [
+          "GRC system design and implementation",
+          "Operational and technology risk management",
+          "Automation of policies and controls",
+          "Audit and compliance support"
+        ]
+      },
+      "dataAnalytics": {
+        "title": "Data Analytics & Business Intelligence",
+        "items": [
+          "Executive dashboards",
+          "KPI frameworks",
+          "Descriptive and predictive analytics",
+          "Decision-support solutions"
+        ]
+      },
+      "digitalConsulting": {
+        "title": "Digital & Strategic Consulting",
+        "items": [
+          "Digital transformation roadmaps",
+          "Process optimization initiatives",
+          "Program and project governance"
+        ]
+      },
+      "platforms": {
+        "title": "Platforms & Application Development",
+        "items": [
+          "Enterprise web platforms",
+          "Custom digital applications",
+          "Scalable and integrated solutions"
+        ]
+      },
+      "digitalMarketing": {
+        "title": "Data-Driven Digital Marketing",
+        "items": [
+          "Digital marketing strategy development",
+          "Digital campaign management",
+          "Search engine optimization (SEO)",
+          "Content and social media management",
+          "Digital analytics and performance measurement"
+        ]
+      }
+    }
+  },
+  "footer": {
+    "description": "Zain Solutions delivers integrated infrastructure and digital transformation solutions across Oman and the region."
+  }
+}

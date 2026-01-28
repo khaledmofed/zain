@@ -1,9 +1,12 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import SocialShare from '../utilities/SocialShare';
+import { useTranslations } from 'next-intl';
 
 const ProjectDetailsContent = ({ projectInfo }) => {
-    const { thumbFull, projectData } = projectInfo
+    const { thumbFull, projectData } = projectInfo;
+    const t = useTranslations('common');
 
     return (
         <>
@@ -20,13 +23,13 @@ const ProjectDetailsContent = ({ projectInfo }) => {
                                         <h4 className="title">Project Info</h4>
                                         <ul>
                                             <li>
-                                                Client <span>Zain Solutions</span>
+                                                Client <span>{t('companyName')}</span>
                                             </li>
                                             <li>
                                                 Date <span>25 February, 2022</span>
                                             </li>
                                             <li>
-                                                Address <span>Zain Solutions, Muscat, Sultanate of Oman</span>
+                                                {t('addressLabel')} <span>{t('fullAddress')}</span>
                                             </li>
                                         </ul>
                                         <ul className="social">

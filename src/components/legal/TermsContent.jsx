@@ -1,98 +1,83 @@
+"use client";
 import React from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 
 const TermsContent = () => {
+    const t = useTranslations('common');
+    const tTerms = useTranslations('terms');
+    const locale = useLocale();
+    const isRTL = locale === 'ar';
+
     return (
         <>
-            <div className="legal-content-area default-padding">
+            <div className="legal-content-area default-padding" dir={isRTL ? 'rtl' : 'ltr'}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <div className="legal-content">
-                                <h2 className="mb-30">Terms of Service</h2>
+                                <h2 className="mb-30">{tTerms('title')}</h2>
                                 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">1. Introduction</h4>
-                                    <p>
-                                        Welcome to Zain Solutions. These Terms of Service ("Terms") govern your access to and use of our website, services, and solutions. By accessing or using our services, you agree to be bound by these Terms.
-                                    </p>
-                                    <p>
-                                        Zain Solutions is an Omani technology company providing integrated infrastructure and digital transformation solutions. Our services include IT infrastructure, cybersecurity, enterprise systems, digital transformation, automation, and data analytics.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.introduction.title')}</h4>
+                                    <p>{tTerms('sections.introduction.paragraph1')}</p>
+                                    <p>{tTerms('sections.introduction.paragraph2')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">2. Services Description</h4>
-                                    <p>
-                                        Zain Solutions operates through two integrated Business Units:
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.servicesDescription.title')}</h4>
+                                    <p>{tTerms('sections.servicesDescription.paragraph1')}</p>
                                     <ul className="list-item mb-20">
-                                        <li><strong>Zain Infra:</strong> Infrastructure, Systems & Security services including enterprise networking, data centers, cloud readiness, system integration, cybersecurity, and managed services.</li>
-                                        <li><strong>Zain DX:</strong> Digital Transformation & Intelligent Solutions including process automation, MIS/ERP systems, data analytics, digital consulting, and platform development.</li>
+                                        <li><strong>{t('zainInfra')}:</strong> {tTerms('zainInfraDescription')}</li>
+                                        <li><strong>{t('zainDX')}:</strong> {tTerms('zainDXDescription')}</li>
                                     </ul>
-                                    <p>
-                                        All services are provided in accordance with applicable laws and regulations of the Sultanate of Oman and international standards.
-                                    </p>
+                                    <p>{tTerms('sections.servicesDescription.paragraph2')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">3. Service Agreements</h4>
-                                    <p>
-                                        Specific service terms, deliverables, timelines, and pricing will be detailed in separate service agreements or statements of work (SOW) executed between Zain Solutions and the client. These Terms serve as a general framework and may be supplemented by specific contractual terms.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.serviceAgreements.title')}</h4>
+                                    <p>{tTerms('sections.serviceAgreements.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">4. Intellectual Property</h4>
-                                    <p>
-                                        All intellectual property rights in our services, solutions, methodologies, and proprietary technologies remain the property of Zain Solutions unless otherwise specified in a written agreement. Clients retain ownership of their data and business processes.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.intellectualProperty.title')}</h4>
+                                    <p>{tTerms('sections.intellectualProperty.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">5. Data Protection and Security</h4>
-                                    <p>
-                                        Zain Solutions is committed to protecting client data and information. We implement industry-standard security measures and comply with applicable data protection regulations. Detailed data handling practices are outlined in our Privacy Policy.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.dataProtection.title')}</h4>
+                                    <p>{tTerms('sections.dataProtection.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">6. Limitation of Liability</h4>
-                                    <p>
-                                        To the maximum extent permitted by law, Zain Solutions' liability for any claims arising from our services is limited to the fees paid for the specific service in question. We are not liable for indirect, consequential, or incidental damages.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.limitationLiability.title')}</h4>
+                                    <p>{tTerms('sections.limitationLiability.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">7. Compliance and Standards</h4>
-                                    <p>
-                                        Our services are designed to align with international standards and best practices while respecting local regulatory requirements. Clients are responsible for ensuring their use of our services complies with applicable laws and regulations in their jurisdiction.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.compliance.title')}</h4>
+                                    <p>{tTerms('sections.compliance.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">8. Modifications to Terms</h4>
-                                    <p>
-                                        Zain Solutions reserves the right to modify these Terms at any time. Material changes will be communicated to clients through appropriate channels. Continued use of our services after such modifications constitutes acceptance of the updated Terms.
-                                    </p>
+                                    <h4 className="mb-20">{tTerms('sections.modifications.title')}</h4>
+                                    <p>{tTerms('sections.modifications.paragraph')}</p>
                                 </div>
 
                                 <div className="content-section mb-40">
-                                    <h4 className="mb-20">9. Contact Information</h4>
+                                    <h4 className="mb-20">{tTerms('sections.contact.title')}</h4>
+                                    <p>{tTerms('sections.contact.paragraph')}</p>
                                     <p>
-                                        For questions regarding these Terms of Service, please contact us:
-                                    </p>
-                                    <p>
-                                        <strong>Zain Solutions</strong><br />
-                                        Muscat, Sultanate of Oman<br />
-                                        Email: info@zainom.com<br />
-                                        Phone: +968 7272 0046<br />
-                                        Website: www.zainom.com
+                                        <strong>{t('companyName')}</strong><br />
+                                        {t('address')}<br />
+                                        {tTerms('sections.contact.email')}<br />
+                                        {tTerms('sections.contact.phone')} <span dir="ltr">+968 7272 0046</span><br />
+                                        {tTerms('sections.contact.website')}
                                     </p>
                                 </div>
 
                                 <div className="content-section">
                                     <p className="text-muted">
-                                        <small>Last Updated: January 2026</small>
+                                        <small>{tTerms('sections.contact.lastUpdated')}</small>
                                     </p>
                                 </div>
                             </div>

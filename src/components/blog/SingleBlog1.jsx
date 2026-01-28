@@ -1,10 +1,28 @@
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import Animate from '../animation/Animate';
 
 const SingleBlog1 = ({ blog }) => {
-    const { id, thumb, date, animationDelay, author, title, btnText } = blog
+    const t = useTranslations('blog');
+    const locale = useLocale();
+    const isRTL = locale === 'ar';
+    const { id, thumb, date, animationDelay, author, title, btnText } = blog;
+
+    const key = String(id);
+    let translatedTitle = title;
+    let translatedText = blog.text;
+    let translatedAuthor = author;
+    try {
+        translatedTitle = t(`items.${key}.title`);
+        translatedText = t(`items.${key}.text`);
+        translatedAuthor = t(`items.${key}.author`);
+    } catch {
+        // fallback to JSON
+    }
+    const translatedBtnText = t('common.readMore');
 
     return (
         <>
@@ -18,16 +36,16 @@ const SingleBlog1 = ({ blog }) => {
                             <div className="blog-meta">
                                 <ul>
                                     <li>
-                                        <span>By </span>
-                                        <Link href="#" scroll={false}>{author}</Link>
+                                        <span>{t('common.by')} </span>
+                                        <Link href="#" scroll={false}>{translatedAuthor}</Link>
                                     </li>
                                     <li>{date}</li>
                                 </ul>
                             </div>
                             <h4>
-                                <Link href={`/blog-single/${id}`}>{title}</Link>
+                                <Link href={`/blog-single/${id}`}>{translatedTitle}</Link>
                             </h4>
-                            <Link href={`/blog-single/${id}`} className="btn-simple"><i className="fas fa-angle-right"></i>{btnText}</Link>
+                            <Link href={`/blog-single/${id}`} className="btn-simple"><i className={isRTL ? "fas fa-angle-left" : "fas fa-angle-right"}></i>{translatedBtnText || btnText}</Link>
                         </div>
                     </div>
                 </div>

@@ -227,7 +227,9 @@ Version: 1.0
 
 .navbar .attr-right {
 	float: right;
-	margin-left: 30px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 .main-nav-content .collapse {

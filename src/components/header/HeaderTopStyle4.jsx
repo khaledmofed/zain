@@ -1,7 +1,11 @@
+"use client";
 import React from 'react';
 import SocialShare from '../utilities/SocialShare';
+import { useTranslations } from 'next-intl';
 
 const HeaderTopStyle4 = () => {
+    const t = useTranslations('common');
+
     return (
         <>
             <div className="top-bar-area top-bar-style-one bg-dark text-light">
@@ -10,10 +14,10 @@ const HeaderTopStyle4 = () => {
                         <div className="col-lg-7">
                             <ul className="item-flex">
                                 <li>
-                                    <i className="fas fa-map-marker-alt"></i> Zain Solutions, Muscat, Sultanate of Oman
+                                    <i className="fas fa-map-marker-alt"></i> {t('fullAddress')}
                                 </li>
                                 <li>
-                                    <a href="tel:+96872720046"><i className="fas fa-phone-alt"></i> +968 7272 0046</a>
+                                    <a href="tel:+96872720046" className="phone-number" dir="ltr"><i className="fas fa-phone-alt"></i> +968 7272 0046</a>
                                 </li>
                             </ul>
                         </div>

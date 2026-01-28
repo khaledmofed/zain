@@ -2,11 +2,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 
 
 const SingleRecentPost = ({ blog }) => {
+    const t = useTranslations('blog');
     const { id, thumbFull, title, date } = blog
+
+    const key = String(id);
+    let translatedTitle = title;
+    try {
+        translatedTitle = t(`items.${key}.title`);
+    } catch {
+        // fallback to JSON
+    }
 
     const truncateString = (str) => {
         if (str.length <= 30) {
@@ -15,7 +25,7 @@ const SingleRecentPost = ({ blog }) => {
         return `${str.slice(0, 30)} ...`;
     };
 
-    const truncatedTitle = truncateString(title);
+    const truncatedTitle = truncateString(translatedTitle);
 
     return (
         <>

@@ -1,14 +1,18 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import shape7 from '@/assets/img/shape/7.png';
 import shape9 from '@/assets/img/shape/9.png';
 import logoLight from '@/assets/img/logo-light.png';
 import logo2040 from '@/assets/img/logo/2040.webp';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import SocialShare from '../utilities/SocialShare';
 import FooterNewsLetter from '../form/FooterNewsLetter';
 
 const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
+    const t = useTranslations('common');
+    const tFooter = useTranslations('footer');
     return (
         <>
             <footer className="bg-dark text-light">
@@ -28,12 +32,13 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                                     <div className="logos-container">
                                     <Link href="/" className="logo-container-text">
                                         {logo ? <Image className="logo" src={logo} alt="Logo " /> : <Image className="logo" src={logoLight} alt="Logo" />}
-                                        <div className="logo-text">Zain <br /> Solutions</div>
+                                        <div className="logo-text">{t('companyNameLine1')} <br /> {t('companyNameLine2')}</div>
                                     </Link>
                                     <Image src={logo2040} alt="Logo 2040" className="logo2040" />
                                     </div>
                                     <p className='mb-0'>
-                                    Integrated Infrastructure & Digital Transformation Solutions                                    </p>
+                                        {tFooter('description')}
+                                    </p>
                                     {/* <div className="opening-hours">
                                         <h5>Opening Hours</h5>
                                         <ul>
@@ -78,7 +83,7 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                                     {/* <h4 className="widget-title">Our Services</h4> */}
                                     <ul>
                                         <li>
-                                            <a href="tel:+96872720046" target='_blank'>+968 7272 0046</a>
+                                            <a href="tel:+96872720046" target='_blank' dir="ltr">+968 7272 0046</a>
                                         </li>
                                         {/* <li>
                                             <Link href="/services-details/1">Business planning</Link>
@@ -114,18 +119,18 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
-                                <p>&copy; Copyright {(new Date().getFullYear())}. All Rights Reserved by <a href="#" target='_blank'>Zain Solutions</a></p>
+                                <p>&copy; {t('copyright')} {(new Date().getFullYear())}. {t('allRightsReserved')} <a href="#" target='_blank'>{t('companyName')}</a></p>
                             </div>
                             <div className="col-lg-6 text-end">
                                 <ul>
                                     <li>
-                                        <Link href="/terms">Terms</Link>
+                                        <Link href="/terms">{t('terms')}</Link>
                                     </li>
                                     <li>
-                                        <Link href="/privacy">Privacy</Link>
+                                        <Link href="/privacy">{t('privacy')}</Link>
                                     </li>
                                     <li>
-                                        <Link href="/contact-us">Support</Link>
+                                        <Link href="/contact-us">{t('support')}</Link>
                                     </li>
                                 </ul>
                             </div>

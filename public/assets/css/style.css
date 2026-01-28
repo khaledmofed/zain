@@ -666,7 +666,9 @@ p {
 .industries-list.list-item li.industry-item {
 	margin-top: 0;
 	border-left: 3px solid var(--color-primary);
+	border-right: none;
     padding-left: 10px;
+	padding-right: 0;
 }
 
 .industries-list.list-item li.industry-item h4 {
@@ -3150,7 +3152,14 @@ img.toty-logo{filter: hue-rotate(-12deg) saturate(.8) brightness(0.95);}
 		top: -26px;
 	}
 }
-
+[dir="ltr"] .navbar.navbar-common .attr-right .attr-nav {
+    order: 2;
+}
+[dir="ltr"] .language-switcher {
+    order: 1;}
+	[dir="ltr"] .menu-center .attr-nav {
+		order: 1;
+	}
 /* ============================================================== 
     # Breadcrumb Styles
 =================================================================== */

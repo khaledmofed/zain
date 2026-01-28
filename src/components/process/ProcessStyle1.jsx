@@ -1,11 +1,13 @@
 "use client"
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import shape11 from '@/assets/img/shape/11.png'
 import Image from 'next/image';
 import Process1Data from '@/assets/jsonData/process/Process1Data.json'
 import SingleProcess1 from './SingleProcess1';
 
 const ProcessStyle1 = ({ sectionClass }) => {
+    const t = useTranslations('process');
 
     const [activeServiceId, setActiveServiceId] = useState(Process1Data[0]?.id || null);
 
@@ -27,10 +29,10 @@ const ProcessStyle1 = ({ sectionClass }) => {
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="site-heading text-center">
-                                <h4 className="sub-heading">Our Solutions Portfolio</h4>
-                                <h2 className="title">Projects & Products</h2>
+                                <h4 className="sub-heading">{t('solutionsPortfolio')}</h4>
+                                <h2 className="title">{t('projectsProducts')}</h2>
                                 <p className="mt-20 mb-0">
-                                    Zain Solutions has delivered a wide range of projects across the public and private sectors, covering infrastructure, security, enterprise systems, automation, and advanced analytics. The company has also developed customizable platforms and solutions, including:
+                                    {t('projectsDescription')}
                                 </p>
                                 <div className="devider"></div>
                             </div>
@@ -39,16 +41,34 @@ const ProcessStyle1 = ({ sectionClass }) => {
                 </div>
                 <div className="container">
                     <div className="row">
-                        {Process1Data.map(process =>
-                            <div className="col-lg-3 col-md-6" key={process.id}>
-                                <div className={`process-style-one ${activeServiceId === process.id ? 'active' : ''}`}
-                                    onMouseEnter={() => handleMouseEnter(process.id)}
-                                    onMouseLeave={handleMouseLeave}
-                                >
-                                    <SingleProcess1 process={process} />
+                        {Process1Data.map(process => {
+                            // Map process ID to translation key
+                            const processKeyMap = {
+                                "1": "mis",
+                                "2": "automation",
+                                "3": "analytics",
+                                "4": "portals"
+                            };
+                            
+                            const processKey = processKeyMap[process.id];
+                            const translatedTitle = processKey ? t(`items.${processKey}.title`) : process.title;
+                            const translatedText = processKey ? t(`items.${processKey}.text`) : process.text;
+                            
+                            return (
+                                <div className="col-lg-3 col-md-6" key={process.id}>
+                                    <div className={`process-style-one ${activeServiceId === process.id ? 'active' : ''}`}
+                                        onMouseEnter={() => handleMouseEnter(process.id)}
+                                        onMouseLeave={handleMouseLeave}
+                                    >
+                                        <SingleProcess1 
+                                            process={process} 
+                                            translatedTitle={translatedTitle}
+                                            translatedText={translatedText}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        )}
+                            );
+                        })}
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import BreadCrumb from '../breadCrumb/BreadCrumb';
 import FooterStyle1 from '../footer/FooterStyle1';

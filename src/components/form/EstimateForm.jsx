@@ -39,7 +39,7 @@ const EstimateForm = () => {
                     <div className="col-lg-6">
                         <div className="form-group">
                             <label htmlFor="phone">Phone</label>
-                            <input className="form-control" id="phone" name="phone" placeholder="+968 7272 0046" type="text" required autoComplete='off' />
+                            <input className="form-control" id="phone" name="phone" placeholder="+968 7272 0046" type="text" required autoComplete='off' dir="ltr" />
                         </div>
                     </div>
                 </div>

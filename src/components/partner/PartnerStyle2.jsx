@@ -1,10 +1,15 @@
 "use client";
 import React from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 import Partner2Data from '@/assets/jsonData/partner/Partner2Data.json'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Keyboard } from 'swiper/modules';
 
 const PartnerStyle2 = () => {
+    const t = useTranslations('partner');
+    const locale = useLocale();
+    const isRTL = locale === 'ar';
+    
     return (
         <>
             <div className="partner-style-two-area overflow-hidden   text-light default-padding">
@@ -13,11 +18,14 @@ const PartnerStyle2 = () => {
                     <div className="row align-center">
                         <div className="col-lg-4">
                             <div className="partner-heading">
-                                <h3 style={{ fontSize: '36px' }}>Trusted by <br /> our Clients</h3>
+                                <h3 style={{ fontSize: '36px' }} dangerouslySetInnerHTML={{ __html: t('trustedByClients') }}></h3>
                             </div>
                         </div>
                         <div className="col-lg-7 offset-lg-1">
                             <Swiper className="clients-style-two-carousel"
+                            style={{
+                                direction: 'ltr'
+                            }}
                                 modules={[Keyboard, Autoplay]}
                                 loop={true}
                                 spaceBetween={30}
@@ -37,7 +45,7 @@ const PartnerStyle2 = () => {
                                                 className="client-row-sprite"
                                                 style={{
                                                     backgroundImage: `url(/assets/img/logo/clients.jpg)`,
-                                                    backgroundPosition: `100% ${partner.position}`,
+                                                    backgroundPosition: `${isRTL ? '0%' : '100%'} ${partner.position}`,
                                                     backgroundSize: '90% auto',
                                                     backgroundRepeat: 'no-repeat',
                                                     width: '100%',
