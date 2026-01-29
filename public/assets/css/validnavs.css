@@ -363,6 +363,9 @@ Version: 1.0
 }
 
 @media (max-width: 767px) {
+  .navbar.navbar-common .attr-right-mobile.attr-right {
+    margin-left: 0px !important;
+  }
   .attr-right-mobile.attr-right {
     display: flex !important;
     float: inline-start;
@@ -3327,6 +3330,9 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 }
 
 @media (min-width: 768px) {
+  .attr-right-mobile.attr-right {
+    display: none;
+  }
   .navbar.no-background.top-pad-50 {
     margin-top: 58px !important;
   }
