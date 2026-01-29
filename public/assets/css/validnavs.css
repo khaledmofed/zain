@@ -3331,7 +3331,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 @media (min-width: 768px) {
   .attr-right-mobile.attr-right {
-    display: none;
+    display: none !important;
   }
   .navbar.no-background.top-pad-50 {
     margin-top: 58px !important;
