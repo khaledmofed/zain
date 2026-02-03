@@ -12626,7 +12626,7 @@ ul.list-regular li::after {
   -webkit-animation: spinner 1s infinite linear;
   animation: spinner 1s infinite linear;
   border-radius: 50%;
-  border: 3px solid rgba(2, 109, 255, 0.2);
+  border: 3px solid #00000033;
   border-top-color: var(--color-primary);
   height: 110px;
   margin: 0 auto 30px auto;
@@ -12649,18 +12649,18 @@ ul.list-regular li::after {
 }
 
 .consua-preloader .animation-preloader .txt-loading .letters-loading {
-  color: rgba(0, 0, 0, 0.2);
+  color: #6c6c6c96;
   position: relative;
 }
 
 .consua-preloader .animation-preloader .txt-loading .letters-loading:before {
   -webkit-animation: letters-loading 4s infinite;
   animation: letters-loading 4s infinite;
-  color: #000000;
+  color: #bf1d2e;
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Cabourg OT", sans-serif;
   position: absolute;
   top: -3px;
   -webkit-transform: rotateY(-90deg);
@@ -12850,11 +12850,13 @@ ul.list-regular li::after {
 
   .consua-preloader .animation-preloader .txt-loading {
     font:
-      bold 3.5em "Outfit",
+      bold 3.5em "Cabourg OT",
       sans-serif;
   }
 }
-
+.txt-loading {
+  font-family: "Cabourg OT", sans-serif !important;
+}
 @media screen and (max-width: 500px) {
   .consua-preloader .animation-preloader .spinner {
     height: 5em;

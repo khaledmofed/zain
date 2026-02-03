@@ -1,10 +1,19 @@
-import createNextIntlPlugin from 'next-intl/plugin';
+import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin('./src/i18n/request.js');
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.js");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactCompiler: true,
+  reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "zain.ivadso.com",
+        pathname: "/storage/**",
+      },
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig);

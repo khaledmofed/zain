@@ -313,6 +313,7 @@
     "previousPost": "Previous Post",
     "nextPost": "Next Post",
     "noTitle": "No Title",
+    "systemAdministrator": "System Administrator",
     "postAuthor": {
       "name": "Waleed Jouda",
       "description": "Digital Business Leader at Zain Solutions, specializing in digital transformation and intelligent solutions. With extensive experience in process automation, data analytics, and enterprise systems, Waleed leads initiatives that drive operational efficiency and digital maturity for organizations across the region."
@@ -433,9 +434,14 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
+    "company": "Company",
     "subject": "Subject",
     "message": "Message",
     "submit": "Submit",
+    "sending": "Sending...",
+    "successMessage": "Your message has been sent successfully.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "requiredFields": "Please fill in the required fields.",
     "description": "Zain Solutions, your trusted digital consulting partner in Muscat, Sultanate of Oman.",
     "addressLine1": "Zain Solutions",
     "addressLine2": "Muscat, Sultanate of Oman"

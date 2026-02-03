@@ -9,10 +9,20 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import SocialShare from "../utilities/SocialShare";
 import FooterNewsLetter from "../form/FooterNewsLetter";
+import { useApp } from "@/contexts/AppContext";
 
 const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
   const t = useTranslations("common");
   const tFooter = useTranslations("footer");
+  const { settings } = useApp();
+  const footerLogo = logo || settings?.logo_white || logoLight;
+  const footerText = settings?.footer_text || tFooter("description");
+  const companyName = settings?.site_name || t("companyName");
+  const copyrightText = settings?.copyright_text;
+  const email = settings?.email || "info@zainom.com";
+  const phone = settings?.phone || "+968 7272 0046";
+  const phoneHref = (phone || "").replace(/\s+/g, "");
+
   return (
     <>
       <footer className="bg-dark text-light">
@@ -35,8 +45,14 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                 <div className="f-item about">
                   <div className="logos-container">
                     <Link href="/" className="logo-container-text">
-                      {logo ? (
-                        <Image className="logo" src={logo} alt="Logo " />
+                      {footerLogo ? (
+                        <Image
+                          className="logo"
+                          src={footerLogo}
+                          alt={companyName}
+                          width={120}
+                          height={40}
+                        />
                       ) : (
                         <Image className="logo" src={logoLight} alt="Logo" />
                       )}
@@ -50,7 +66,7 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                       className="logo2040"
                     />
                   </div>
-                  <p className="mb-0">{tFooter("description")}</p>
+                  <p className="mb-0">{footerText}</p>
                   {/* <div className="opening-hours">
                                         <h5>Opening Hours</h5>
                                         <ul>
@@ -73,8 +89,12 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                   {/* <h4 className="widget-title">Our Company</h4> */}
                   <ul>
                     <li>
-                      <a href="mailto:info@zainom.com" target="_blank">
-                        info@zainom.com
+                      <a
+                        href={`mailto:${email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {email}
                       </a>
                     </li>
                     {/* <li>
@@ -97,8 +117,13 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
                   {/* <h4 className="widget-title">Our Services</h4> */}
                   <ul>
                     <li>
-                      <a href="tel:+96872720046" target="_blank" dir="ltr">
-                        +968 7272 0046
+                      <a
+                        href={phoneHref ? `tel:${phoneHref}` : "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        dir="ltr"
+                      >
+                        {phone}
                       </a>
                     </li>
                     {/* <li>
@@ -136,11 +161,15 @@ const FooterStyle1 = ({ shape, shapeClass, logo, formStyle }) => {
             <div className="row">
               <div className="col-lg-6">
                 <p>
-                  &copy; {t("copyright")} {new Date().getFullYear()}.{" "}
-                  {t("allRightsReserved")}{" "}
-                  <a href="#" target="_blank">
-                    {t("companyName")}
-                  </a>
+                  {copyrightText || (
+                    <>
+                      &copy; {t("copyright")} {new Date().getFullYear()}.{" "}
+                      {t("allRightsReserved")}{" "}
+                      <a href="/" target="_blank" rel="noopener noreferrer">
+                        {companyName}
+                      </a>
+                    </>
+                  )}
                 </p>
               </div>
               <div className="col-lg-6 text-end">

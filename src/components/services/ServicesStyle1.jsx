@@ -1,205 +1,369 @@
-"use client"
-import React, { useEffect } from 'react';
-import shape10 from '@/assets/img/shape/10.png'
-import Services1TabData from '@/assets/jsonData/services/Services1TabData.json'
-import SingleServices1 from './SingleServices1';
-import Image from 'next/image';
-import { Link } from '@/i18n/routing';
-import { useTranslations } from 'next-intl';
+"use client";
+import React, { useEffect } from "react";
+import shape10 from "@/assets/img/shape/10.png";
+import Services1TabData from "@/assets/jsonData/services/Services1TabData.json";
+import SingleServices1 from "./SingleServices1";
+import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import { useApp } from "@/contexts/AppContext";
 
 const ServicesStyle1 = () => {
-    const t = useTranslations('services');
-    const tCommon = useTranslations('common');
-    useEffect(() => {
-        // Ensure Bootstrap is loaded
-        if (typeof window !== 'undefined' && window.bootstrap) {
-            return;
-        }
-    }, []);
+  const t = useTranslations("services");
+  const tCommon = useTranslations("common");
+  const { settings } = useApp();
 
-    const handleUnitClick = (tabId) => {
-        if (typeof window !== 'undefined') {
-            // Trigger click on the corresponding tab button
-            const tabButton = document.querySelector(`[data-bs-target="#${tabId}"]`);
-            if (tabButton) {
-                // Use Bootstrap Tab API if available
-                if (window.bootstrap && window.bootstrap.Tab) {
-                    const tab = new window.bootstrap.Tab(tabButton);
-                    tab.show();
-                } else {
-                    // Fallback: trigger click
-                    tabButton.click();
-                }
-            }
-        }
-    };
+  const tab1Title = settings?.business_model_tab1_title ?? t("businessModel");
+  const tab2Title = settings?.business_model_tab2_title ?? t("zainInfra");
+  const tab3Title = settings?.business_model_tab3_title ?? t("zainDX");
+  const tab1Content = settings?.business_model_tab1_content;
+  const tab2Content = settings?.business_model_tab2_content;
+  const tab3Content = settings?.business_model_tab3_content;
+  const useApiContent = tab1Content && tab2Content && tab3Content;
+  useEffect(() => {
+    // Ensure Bootstrap is loaded
+    if (typeof window !== "undefined" && window.bootstrap) {
+      return;
+    }
+  }, []);
 
-    return (
-        <>
-            <div className="services-style-one-area default-padding bg-gray">
-                <div className="triangle-shape">
-                    <Image src={shape10} alt="Shape" className="toty-logo" />
+  const handleUnitClick = (tabId) => {
+    if (typeof window !== "undefined") {
+      const tabButton = document.querySelector(`[data-bs-target="#${tabId}"]`);
+      if (tabButton) {
+        if (window.bootstrap && window.bootstrap.Tab) {
+          const tab = new window.bootstrap.Tab(tabButton);
+          tab.show();
+        } else {
+          tabButton.click();
+        }
+      }
+    }
+  };
+
+  const handleTab1CardClick = (e) => {
+    if (!useApiContent) return;
+    const card = e.target.closest(".clickable-unit-card");
+    if (!card) return;
+    const container = e.currentTarget;
+    const cards = container.querySelectorAll(".clickable-unit-card");
+    const index = Array.from(cards).indexOf(card);
+    if (index === 0) handleUnitClick("tab2");
+    else if (index === 1) handleUnitClick("tab3");
+  };
+
+  return (
+    <>
+      <div className="services-style-one-area default-padding bg-gray">
+        <div className="triangle-shape">
+          <Image src={shape10} alt="Shape" className="toty-logo" />
+        </div>
+        <div
+          className="center-shape"
+          style={{ backgroundImage: `url(/assets/img/shape/5.png)` }}
+        ></div>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-5 mb-md-60">
+              <div className="service-nav-info">
+                <h4 className="sub-title">{t("businessModel")}</h4>
+                <h2>{t("twoUnits")}</h2>
+                <div
+                  className="nav nav-tabs service-tab-navs"
+                  id="nav-tab"
+                  role="tablist"
+                  suppressHydrationWarning
+                >
+                  <button
+                    className="nav-link active"
+                    id="nav-id-1"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab1"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab1"
+                    aria-selected="true"
+                    suppressHydrationWarning
+                  >
+                    <i className="flaticon-portfolio"></i>
+                    {tab1Title}
+                  </button>
+                  <button
+                    className="nav-link"
+                    id="nav-id-2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab2"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab2"
+                    aria-selected="false"
+                    suppressHydrationWarning
+                  >
+                    <i className="flaticon-megaphone"></i>
+                    {tab2Title}
+                  </button>
+                  <button
+                    className="nav-link"
+                    id="nav-id-3"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab3"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab3"
+                    aria-selected="false"
+                    suppressHydrationWarning
+                  >
+                    <i className="flaticon-save-money"></i>
+                    {tab3Title}
+                  </button>
                 </div>
-                <div className="center-shape" style={{ backgroundImage: `url(/assets/img/shape/5.png)` }}></div>
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-5 mb-md-60">
-                            <div className="service-nav-info">
-                                <h4 className="sub-title">{t('businessModel')}</h4>
-                                <h2>{t('twoUnits')}</h2>
-                                <div className="nav nav-tabs service-tab-navs" id="nav-tab" role="tablist" suppressHydrationWarning>
-                                    <button className="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true" suppressHydrationWarning>
-                                        <i className="flaticon-portfolio"></i>
-                                        {t('businessModel')}
-                                    </button>
-                                    <button className="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false" suppressHydrationWarning>
-                                        <i className="flaticon-megaphone"></i>
-                                        {t('zainInfra')}
-                                    </button>
-                                    <button className="nav-link" id="nav-id-3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false" suppressHydrationWarning>
-                                        <i className="flaticon-save-money"></i>
-                                        {t('zainDX')}
-                                    </button>
-                                </div>
+              </div>
+            </div>
+            <div className="col-lg-7 pl-50 pl-md-15 pl-xs-15">
+              <div
+                className="tab-content services-tab-content"
+                id="nav-tabContent"
+              >
+                {useApiContent ? (
+                  <>
+                    <div
+                      className="tab-pane fade show active"
+                      id="tab1"
+                      role="tabpanel"
+                      aria-labelledby="nav-id-1"
+                    >
+                      <div
+                        className="tab1-api-content"
+                        onClick={handleTab1CardClick}
+                        role="presentation"
+                      >
+                        <div
+                          dangerouslySetInnerHTML={{ __html: tab1Content }}
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="tab-pane fade"
+                      id="tab2"
+                      role="tabpanel"
+                      aria-labelledby="nav-id-2"
+                    >
+                      <div dangerouslySetInnerHTML={{ __html: tab2Content }} />
+                    </div>
+                    <div
+                      className="tab-pane fade"
+                      id="tab3"
+                      role="tabpanel"
+                      aria-labelledby="nav-id-3"
+                    >
+                      <div dangerouslySetInnerHTML={{ __html: tab3Content }} />
+                    </div>
+                  </>
+                ) : (
+                  Services1TabData.map((service) => {
+                    if (service.tabType === "businessModel") {
+                      return (
+                        <div
+                          className={`tab-pane fade ${service.tabClass}`}
+                          id={service.tabId}
+                          role="tabpanel"
+                          aria-labelledby={service.ariaLabelled}
+                          key={service.id}
+                        >
+                          <div className="business-model-content">
+                            <h3 className="mb-10">{t("businessUnits")}</h3>
+                            <p className="mb-20">
+                              {t("operatesThroughTwoUnits")}
+                            </p>
+                            <div className="row mb-10">
+                              {service.businessUnits.map((unit) => {
+                                const tabId =
+                                  unit.title === "Zain Infra" ? "tab2" : "tab3";
+                                const unitKey =
+                                  unit.title === "Zain Infra"
+                                    ? "zainInfra"
+                                    : "zainDX";
+                                return (
+                                  <div className="col-md-6 mb-30" key={unit.id}>
+                                    <div
+                                      className="business-unit-card clickable-unit-card"
+                                      onClick={() => handleUnitClick(tabId)}
+                                    >
+                                      <i className={unit.icon}></i>
+                                      <h4>
+                                        {t(
+                                          `businessUnitsData.${unitKey}.title`,
+                                        )}
+                                      </h4>
+                                      <p>
+                                        {t(
+                                          `businessUnitsData.${unitKey}.subtitle`,
+                                        )}
+                                      </p>
+                                    </div>
+                                  </div>
+                                );
+                              })}
                             </div>
+                            <h4 className="mb-20">{t("thisModelProvides")}</h4>
+                            <ul className="model-provides-list">
+                              {service.modelProvides.map((item) => {
+                                const translationKey = {
+                                  1: "clearAccountability",
+                                  2: "reducedComplexity",
+                                  3: "endToEndDelivery",
+                                  4: "flexibleScalability",
+                                }[item.id];
+                                return (
+                                  <li key={item.id}>
+                                    <i className={item.icon}></i>
+                                    <span>
+                                      {t(`modelProvides.${translationKey}`)}
+                                    </span>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
                         </div>
-                        <div className="col-lg-7 pl-50 pl-md-15 pl-xs-15">
-                            <div className="tab-content services-tab-content" id="nav-tabContent">
-                                {Services1TabData.map(service => {
-                                    if (service.tabType === 'businessModel') {
-                                        return (
-                                            <div className={`tab-pane fade ${service.tabClass}`} id={service.tabId} role="tabpanel" aria-labelledby={service.ariaLabelled} key={service.id}>
-                                                <div className="business-model-content">
-                                                    <h3 className="mb-10">{t('businessUnits')}</h3>
-                                                    <p className="mb-20">{t('operatesThroughTwoUnits')}</p>
-                                                    <div className="row mb-10">
-                                                        {service.businessUnits.map(unit => {
-                                                            // Map unit to corresponding tab
-                                                            const tabId = unit.title === "Zain Infra" ? "tab2" : "tab3";
-                                                            const unitKey = unit.title === "Zain Infra" ? "zainInfra" : "zainDX";
-                                                            return (
-                                                                <div className="col-md-6 mb-30" key={unit.id}>
-                                                                    <div 
-                                                                        className="business-unit-card clickable-unit-card" 
-                                                                        onClick={() => handleUnitClick(tabId)}
-                                                                    >
-                                                                        <i className={unit.icon}></i>
-                                                                        <h4>{t(`businessUnitsData.${unitKey}.title`)}</h4>
-                                                                        <p>{t(`businessUnitsData.${unitKey}.subtitle`)}</p>
-                                                                    </div>
-                                                                </div>
-                                                            );
-                                                        })}
-                                                    </div>
-                                                    <h4 className="mb-20">{t('thisModelProvides')}</h4>
-                                                    <ul className="model-provides-list">
-                                                        {service.modelProvides.map(item => {
-                                                            const translationKey = {
-                                                                1: 'clearAccountability',
-                                                                2: 'reducedComplexity',
-                                                                3: 'endToEndDelivery',
-                                                                4: 'flexibleScalability'
-                                                            }[item.id];
-                                                            return (
-                                                                <li key={item.id}>
-                                                                    <i className={item.icon}></i>
-                                                                    <span>{t(`modelProvides.${translationKey}`)}</span>
-                                                                </li>
-                                                            );
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        );
-                                    } else if (service.tabType === 'businessUnit') {
-                                        const isZainInfra = service.id === 2;
-                                        const unitKey = isZainInfra ? 'zainInfraUnit' : 'zainDXUnit';
-                                        
-                                        return (
-                                            <div className={`tab-pane fade ${service.tabClass}`} id={service.tabId} role="tabpanel" aria-labelledby={service.ariaLabelled} key={service.id}>
-                                                <div className="business-unit-content">
-                                                    <h3 className="mb-20">{t(`${unitKey}.unitTitle`)}</h3>
-                                                    <p className="mb-30">{t(`${unitKey}.unitDescription`)}</p>
-                                                    <h4 className="mb-20" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>{t('servicesLabel')} {service.link && (
-                                                        <div className="position-xd-infra">
-                                                            <Link className="btn-animation dark mt-0" href={service.link}>
-                                                                <i className="fas fa-arrow-right"></i> <span>{t(`${unitKey}.btnText`)}</span>
-                                                            </Link>
-                                                        </div>
-                                                    )}</h4>
-                                                    <div className="row">
-                                                        {service.services.map((data, index) => {
-                                                            const serviceKeyMap = isZainInfra ? {
-                                                                1: 'itInfrastructure',
-                                                                2: 'systemsIntegration',
-                                                                3: 'cybersecurity',
-                                                                4: 'businessContinuity'
-                                                            } : {
-                                                                1: 'digitalTransformation',
-                                                                2: 'mis',
-                                                                3: 'dataAnalytics',
-                                                                4: 'digitalConsulting',
-                                                                5: 'platforms'
-                                                            };
-                                                            
-                                                            // Use data.id or fallback to index + 1
-                                                            const serviceId = data.id || (index + 1);
-                                                            const serviceTranslationKey = serviceKeyMap[serviceId];
-                                                            
-                                                            // Debug logging
-                                                            if (process.env.NODE_ENV === 'development') {
-                                                                console.log('Service translation debug:', {
-                                                                    serviceId,
-                                                                    serviceTranslationKey,
-                                                                    unitKey,
-                                                                    dataId: data.id,
-                                                                    index,
-                                                                    serviceKeyMap
-                                                                });
-                                                            }
-                                                            
-                                                            if (!serviceTranslationKey || typeof serviceTranslationKey !== 'string') {
-                                                                console.error(`Invalid translation key for service id: ${serviceId}, unitKey: ${unitKey}, serviceTranslationKey:`, serviceTranslationKey, 'data:', data);
-                                                                // Fallback to original data if translation key not found
-                                                                return (
-                                                                    <div className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10" key={data.id || index}>
-                                                                        <SingleServices1 data={data} />
-                                                                    </div>
-                                                                );
-                                                            }
-                                                            
-                                                            // Build translation path correctly
-                                                            const titleKey = `${unitKey}.services.${serviceTranslationKey}.title`;
-                                                            const textKey = `${unitKey}.services.${serviceTranslationKey}.text`;
-                                                            
-                                                            // Try to get translations
-                                                            let translatedTitle, translatedText;
-                                                            try {
-                                                                translatedTitle = t(titleKey);
-                                                                translatedText = t(textKey);
-                                                            } catch (error) {
-                                                                console.error(`Translation error for keys: ${titleKey}, ${textKey}`, error);
-                                                                translatedTitle = data.title;
-                                                                translatedText = data.text;
-                                                            }
-                                                            
-                                                            return (
-                                                                <div className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10" key={data.id || index}>
-                                                                    <SingleServices1 data={{
-                                                                        ...data,
-                                                                        title: translatedTitle,
-                                                                        text: translatedText
-                                                                    }} />
-                                                                </div>
-                                                            );
-                                                        })}
-                                                    </div>
-                                                    <div className="value-delivered mt-20">
-                                                        <h4 className="mb-2">{t('valueDelivered')}</h4>
-                                                        <p>{t(`${unitKey}.valueDelivered`)}</p>
-                                                    </div>
-                                                    
-                                                    {/* {service.integratedApproach && (
+                      );
+                    } else if (service.tabType === "businessUnit") {
+                      const isZainInfra = service.id === 2;
+                      const unitKey = isZainInfra
+                        ? "zainInfraUnit"
+                        : "zainDXUnit";
+
+                      return (
+                        <div
+                          className={`tab-pane fade ${service.tabClass}`}
+                          id={service.tabId}
+                          role="tabpanel"
+                          aria-labelledby={service.ariaLabelled}
+                          key={service.id}
+                        >
+                          <div className="business-unit-content">
+                            <h3 className="mb-20">
+                              {t(`${unitKey}.unitTitle`)}
+                            </h3>
+                            <p className="mb-30">
+                              {t(`${unitKey}.unitDescription`)}
+                            </p>
+                            <h4
+                              className="mb-20"
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                              }}
+                            >
+                              {t("servicesLabel")}{" "}
+                              {service.link && (
+                                <div className="position-xd-infra">
+                                  <Link
+                                    className="btn-animation dark mt-0"
+                                    href={service.link}
+                                  >
+                                    <i className="fas fa-arrow-right"></i>{" "}
+                                    <span>{t(`${unitKey}.btnText`)}</span>
+                                  </Link>
+                                </div>
+                              )}
+                            </h4>
+                            <div className="row">
+                              {service.services.map((data, index) => {
+                                const serviceKeyMap = isZainInfra
+                                  ? {
+                                      1: "itInfrastructure",
+                                      2: "systemsIntegration",
+                                      3: "cybersecurity",
+                                      4: "businessContinuity",
+                                    }
+                                  : {
+                                      1: "digitalTransformation",
+                                      2: "mis",
+                                      3: "dataAnalytics",
+                                      4: "digitalConsulting",
+                                      5: "platforms",
+                                    };
+
+                                // Use data.id or fallback to index + 1
+                                const serviceId = data.id || index + 1;
+                                const serviceTranslationKey =
+                                  serviceKeyMap[serviceId];
+
+                                // Debug logging
+                                if (process.env.NODE_ENV === "development") {
+                                  console.log("Service translation debug:", {
+                                    serviceId,
+                                    serviceTranslationKey,
+                                    unitKey,
+                                    dataId: data.id,
+                                    index,
+                                    serviceKeyMap,
+                                  });
+                                }
+
+                                if (
+                                  !serviceTranslationKey ||
+                                  typeof serviceTranslationKey !== "string"
+                                ) {
+                                  console.error(
+                                    `Invalid translation key for service id: ${serviceId}, unitKey: ${unitKey}, serviceTranslationKey:`,
+                                    serviceTranslationKey,
+                                    "data:",
+                                    data,
+                                  );
+                                  // Fallback to original data if translation key not found
+                                  return (
+                                    <div
+                                      className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10"
+                                      key={data.id || index}
+                                    >
+                                      <SingleServices1 data={data} />
+                                    </div>
+                                  );
+                                }
+
+                                // Build translation path correctly
+                                const titleKey = `${unitKey}.services.${serviceTranslationKey}.title`;
+                                const textKey = `${unitKey}.services.${serviceTranslationKey}.text`;
+
+                                // Try to get translations
+                                let translatedTitle, translatedText;
+                                try {
+                                  translatedTitle = t(titleKey);
+                                  translatedText = t(textKey);
+                                } catch (error) {
+                                  console.error(
+                                    `Translation error for keys: ${titleKey}, ${textKey}`,
+                                    error,
+                                  );
+                                  translatedTitle = data.title;
+                                  translatedText = data.text;
+                                }
+
+                                return (
+                                  <div
+                                    className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10"
+                                    key={data.id || index}
+                                  >
+                                    <SingleServices1
+                                      data={{
+                                        ...data,
+                                        title: translatedTitle,
+                                        text: translatedText,
+                                      }}
+                                    />
+                                  </div>
+                                );
+                              })}
+                            </div>
+                            <div className="value-delivered mt-20">
+                              <h4 className="mb-2">{t("valueDelivered")}</h4>
+                              <p>{t(`${unitKey}.valueDelivered`)}</p>
+                            </div>
+
+                            {/* {service.integratedApproach && (
                                                         <div className="integrated-approach mt-40">
                                                             <h4 className="mb-15">{service.integratedApproach.title}</h4>
                                                             <p className="mb-20">{service.integratedApproach.description}</p>
@@ -211,19 +375,20 @@ const ServicesStyle1 = () => {
                                                             <p className="mt-20"><strong>{service.integratedApproach.conclusion}</strong></p>
                                                         </div>
                                                     )} */}
-                                                </div>
-                                            </div>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
+                      );
+                    }
+                    return null;
+                  })
+                )}
+              </div>
             </div>
-        </>
-    );
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default ServicesStyle1;
