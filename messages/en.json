@@ -110,6 +110,10 @@
   "project": {
     "popularProjects": "Popular Projects",
     "recentCompletedProjects": "Our most recent Completed Projects",
+    "detailsTitle": "Project Details",
+    "projectInfo": "Project Info",
+    "category": "Category",
+    "visitProject": "Visit Project",
     "items": {
       "strawberryGarden": {
         "tag": "Web Development",

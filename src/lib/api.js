@@ -150,6 +150,31 @@ export async function fetchCustom(slug, locale = "en") {
 }
 
 /**
+ * Fetches a single project by slug from the API.
+ * @param {string} slug - Project slug (e.g. "project-name").
+ * @param {string} locale - 'ar' or 'en' (Accept-Language).
+ * @returns {Promise<object|null>} API data object or null on error.
+ */
+export async function fetchProjectBySlug(slug, locale = "en") {
+  if (!slug) return null;
+  const url = `${API_BASE}/projects/${encodeURIComponent(slug)}`;
+  const headers = {
+    Accept: "application/json",
+    "Accept-Language": locale === "ar" ? "ar" : "en",
+  };
+
+  try {
+    const res = await fetch(url, { headers, cache: "no-store" });
+    if (!res.ok) return null;
+    const json = await res.json();
+    return json?.data ?? null;
+  } catch (err) {
+    console.error("[API] fetchProjectBySlug error:", err.message);
+    return null;
+  }
+}
+
+/**
  * Submits a contact form to the API.
  * @param {object} payload - { name, email, phone?, company?, subject?, message }
  * @returns {Promise<{ success: boolean, message: string, data?: object }>}

@@ -498,6 +498,17 @@ nav.navbar.validnavs .navbar-toggle {
 
 nav.navbar.validnavs .navbar-toggle i {
   font-weight: 300;
+  color: #222 !important;
+}
+
+nav.navbar.validnavs .navbar-toggle {
+  color: #222 !important;
+}
+
+nav.navbar.validnavs .navbar-toggle:hover i,
+nav.navbar.validnavs .navbar-toggle:focus i,
+nav.navbar.validnavs .navbar-toggle:active i {
+  color: #222 !important;
 }
 
 nav.navbar.validnavs ul.nav .dropdown-menu .dropdown-menu {

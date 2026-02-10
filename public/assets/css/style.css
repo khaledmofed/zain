@@ -2924,12 +2924,9 @@ footer .logo-container-text {
   transform-origin: 50% 0;
   -webkit-transform: scale(0.75) translateY(-21px);
   transform: scale(0.75) translateY(-21px);
-  -webkit-transition:
-    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
     opacity 0.15s ease-out;
-  transition:
-    all 0.2s cubic-bezier(0.5, 0, 0, 1.25),
-    opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
   z-index: 9;
   width: 100%;
 }
@@ -3835,9 +3832,7 @@ img.toty-logo {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property:
-    transform,
-    -webkit-transform;
+  transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-transform: translate3d(0px, 0, 0);
@@ -5731,9 +5726,15 @@ img.toty-logo {
 
 .large-shape {
   position: absolute;
-  right: 0;
+  right: -55px;
   top: -120px;
   max-width: 20%;
+}
+
+@media (max-width: 767px) {
+  .large-shape {
+    display: none;
+  }
 }
 
 .process-style-one-area {
@@ -5860,7 +5861,11 @@ img.toty-logo {
   font-size: 40px;
   color: var(--color-primary);
 }
-
+@media (max-width: 767px) {
+  .partner-map h2 {
+    font-size: 90px;
+  }
+}
 .partner-map h4 {
   /* margin: 0; */
   font-weight: 600;
@@ -11041,6 +11046,10 @@ ul.list-regular li::after {
     margin-bottom: 50px;
   }
 
+  .partner-map h2 {
+    font-size: 90px;
+  }
+
   .partner-items ul li {
     border: 1px solid #e7e7e7;
   }
@@ -12361,6 +12370,24 @@ ul.list-regular li::after {
   .client-row-sprite {
     height: 60px !important;
   }
+  .partner-style-two-carousel-wrap {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .partner-style-two-carousel-wrap .clients-style-two-carousel {
+    width: 100%;
+    max-width: 100%;
+  }
+  .partner-style-two-carousel-wrap .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .partner-style-two-carousel-wrap .client-row-sprite {
+    margin: 0 auto;
+    max-width: 320px;
+  }
   .f-item.about {
     text-align: center;
   }
@@ -12638,9 +12665,7 @@ ul.list-regular li::after {
 }
 
 .consua-preloader .animation-preloader .txt-loading {
-  font:
-    bold 4em "Outfit",
-    sans-serif;
+  font: bold 4em "Outfit", sans-serif;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -12849,9 +12874,7 @@ ul.list-regular li::after {
   }
 
   .consua-preloader .animation-preloader .txt-loading {
-    font:
-      bold 3.5em "Cabourg OT",
-      sans-serif;
+    font: bold 3.5em "Cabourg OT", sans-serif;
   }
 }
 .txt-loading {
@@ -12864,9 +12887,7 @@ ul.list-regular li::after {
   }
 
   .consua-preloader .animation-preloader .txt-loading {
-    font:
-      bold 2em "Outfit",
-      sans-serif;
+    font: bold 2em "Outfit", sans-serif;
   }
 }
 

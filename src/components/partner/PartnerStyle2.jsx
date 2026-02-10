@@ -31,7 +31,7 @@ const PartnerStyle2 = () => {
                 ></h3>
               </div>
             </div>
-            <div className="col-lg-7 offset-lg-1">
+            <div className="col-lg-7 offset-lg-1 partner-style-two-carousel-wrap">
               <Swiper
                 className="clients-style-two-carousel"
                 style={{

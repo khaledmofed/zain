@@ -57,9 +57,11 @@ const SingleProject1 = ({ project }) => {
       ? t(`items.${projectKey}.btnText`)
       : btnText;
 
-  const projectLink = isFromApi
-    ? url || `/project-details/${id}`
-    : link || `/project-details/${id}`;
+  const projectLink = isFromApi && slug
+    ? `/project-details/${slug}`
+    : isFromApi
+      ? url || `/project-details/${id}`
+      : link || `/project-details/${id}`;
   const isExternalLink = projectLink && projectLink.startsWith("http");
   const imgSrc = isFromApi
     ? image

@@ -110,6 +110,10 @@
   "project": {
     "popularProjects": "المشاريع الشائعة",
     "recentCompletedProjects": "أحدث المشاريع المكتملة لدينا",
+    "detailsTitle": "تفاصيل المشروع",
+    "projectInfo": "معلومات المشروع",
+    "category": "التصنيف",
+    "visitProject": "زيارة المشروع",
     "items": {
       "strawberryGarden": {
         "tag": "تطوير الويب",

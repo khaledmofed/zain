@@ -684,7 +684,11 @@
   line-height: 1.1;
   font-weight: bold;
 }
-
+@media (max-width: 767px) {
+  [dir="rtl"] .partner-map h2 {
+    font-size: 90px;
+  }
+}
 /* Thumb Shape Bottom RTL */
 [dir="rtl"] .thumb-shape-bottom {
   right: auto !important;
@@ -756,8 +760,17 @@
 /* Large Shape RTL */
 [dir="rtl"] .large-shape {
   right: auto !important;
-  left: 0 !important;
+  left: -57px !important;
   top: -120px !important;
+}
+
+/* Large Shape RTL - Mobile only */
+@media (max-width: 767px) {
+  [dir="rtl"] .large-shape {
+    top: -76px !important;
+    left: 0px !important;
+    right: auto !important;
+  }
 }
 
 /* Shape Left Top RTL */
@@ -821,11 +834,13 @@
 }
 
 /* Project Style One Info RTL */
-[dir="rtl"] .project-style-one .info {
-  left: auto !important;
-  right: -95px !important;
-  margin-right: 0 !important;
-  margin-left: -80px !important;
+@media (min-width: 768px) {
+  [dir="rtl"] .project-style-one .info {
+    left: auto !important;
+    right: -95px !important;
+    margin-right: 0 !important;
+    margin-left: -80px !important;
+  }
 }
 
 /* Project Swiper Nav RTL */
