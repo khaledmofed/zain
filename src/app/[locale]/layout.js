@@ -116,6 +116,7 @@ export default async function LocaleLayout({ children, params }) {
       />
       <AppProvider settings={settings} homeData={homeData}>
         <HtmlAttributes
+          locale={locale}
           tajawalVariable={locale === "ar" ? tajawal.variable : ""}
         />
         <ToastContainer />

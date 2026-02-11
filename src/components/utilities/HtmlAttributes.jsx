@@ -1,9 +1,7 @@
 "use client";
 import { useEffect } from 'react';
-import { useLocale } from 'next-intl';
 
-export default function HtmlAttributes({ tajawalVariable }) {
-  const locale = useLocale();
+export default function HtmlAttributes({ locale = 'en', tajawalVariable }) {
   const isRTL = locale === 'ar';
 
   useEffect(() => {

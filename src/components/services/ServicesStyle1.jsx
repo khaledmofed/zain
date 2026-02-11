@@ -192,12 +192,12 @@ const ServicesStyle1 = () => {
                                       <i className={unit.icon}></i>
                                       <h4>
                                         {t(
-                                          `businessUnitsData.${unitKey}.title`,
+                                          `businessUnitsData.${unitKey}.title`
                                         )}
                                       </h4>
                                       <p>
                                         {t(
-                                          `businessUnitsData.${unitKey}.subtitle`,
+                                          `businessUnitsData.${unitKey}.subtitle`
                                         )}
                                       </p>
                                     </div>
@@ -245,7 +245,7 @@ const ServicesStyle1 = () => {
                             <h3 className="mb-20">
                               {t(`${unitKey}.unitTitle`)}
                             </h3>
-                            <p className="mb-30">
+                            <p className="mb-10">
                               {t(`${unitKey}.unitDescription`)}
                             </p>
                             <h4
@@ -311,12 +311,12 @@ const ServicesStyle1 = () => {
                                     `Invalid translation key for service id: ${serviceId}, unitKey: ${unitKey}, serviceTranslationKey:`,
                                     serviceTranslationKey,
                                     "data:",
-                                    data,
+                                    data
                                   );
                                   // Fallback to original data if translation key not found
                                   return (
                                     <div
-                                      className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10"
+                                      className="col-lg-6 col-md-6 mt-10 mt-md-10 mt-xs-10"
                                       key={data.id || index}
                                     >
                                       <SingleServices1 data={data} />
@@ -336,7 +336,7 @@ const ServicesStyle1 = () => {
                                 } catch (error) {
                                   console.error(
                                     `Translation error for keys: ${titleKey}, ${textKey}`,
-                                    error,
+                                    error
                                   );
                                   translatedTitle = data.title;
                                   translatedText = data.text;
@@ -344,7 +344,7 @@ const ServicesStyle1 = () => {
 
                                 return (
                                   <div
-                                    className="col-lg-6 col-md-6 mt-15 mt-md-15 mt-xs-10"
+                                    className="col-lg-6 col-md-6 mt-10 mt-md-10 mt-xs-10"
                                     key={data.id || index}
                                   >
                                     <SingleServices1
