@@ -2,9 +2,9 @@ import { cache } from "react";
 
 /**
  * Base URL for Zain Solutions API.
- * Set API_BASE_URL in .env.local to override (e.g. API_BASE_URL=https://zain.ivadso.com/api).
+ * Set API_BASE_URL in .env.local to override (e.g. API_BASE_URL=https://admin.zainom.com/api).
  */
-const API_BASE = process.env.API_BASE_URL || "https://zain.ivadso.com/api";
+const API_BASE = process.env.API_BASE_URL || "https://admin.zainom.com/api";
 const STORAGE_BASE =
   process.env.NEXT_PUBLIC_STORAGE_URL ||
   (API_BASE ? API_BASE.replace(/\/api\/?$/, "") + "/storage" : "");
@@ -51,7 +51,7 @@ export const fetchHome = cache(async function fetchHome(locale = "en") {
       "| URL:",
       url,
       "|",
-      err.cause || "",
+      err.cause || ""
     );
     return null;
   }
@@ -110,7 +110,7 @@ export async function fetchBlogs(page = 1, locale = "en", opts = {}) {
     const json = await res.json();
     const payload = json?.data ?? json;
     return {
-      data: Array.isArray(payload?.data) ? payload.data : (payload?.data ?? []),
+      data: Array.isArray(payload?.data) ? payload.data : payload?.data ?? [],
       meta: payload?.meta ?? {
         current_page: 1,
         last_page: 1,
