@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "zain.ivadso.com",
         pathname: "/storage/**",
       },
+      {
+        protocol: "https",
+        hostname: "admin.zainom.com",
+        pathname: "/storage/**",
+      },
     ],
   },
 };

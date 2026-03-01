@@ -13,11 +13,14 @@ const Dependency = () => {
     "96872720046"
   )
     .replace(/\s+/g, "")
-    .replace(/^\+/, "");
+    .replace(/\D/g, "")
+    .replace(/^0+/, "") || "96872720046";
   const whatsappMessage =
     locale === "ar"
       ? "مرحباً، أود الاستفسار عن خدماتكم."
       : "Hello, I'd like to inquire about your services.";
+
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   useEffect(() => {
     // Dynamically import Bootstrap JS to avoid SSR issues
@@ -32,7 +35,7 @@ const Dependency = () => {
     <>
       <a
         className="whatsapp-float"
-        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+        href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={

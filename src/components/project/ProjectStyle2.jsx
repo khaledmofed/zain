@@ -8,9 +8,18 @@ import Project2Data from '@/assets/jsonData/project/Project2Data.json';
 // Dynamically import the IsotopeGallery component with SSR disabled
 const IsotopeGallery = dynamic(() => import('./IsotopeGallery'), { ssr: false });
 
-const ProjectStyle2 = ({ projectTitle }) => {
+const ProjectStyle2 = ({ projectTitle, items: itemsProp }) => {
 
-    const [activeServiceId, setActiveServiceId] = useState(Project2Data[0]?.id || null);
+    const defaultItems = Project2Data.map((item) => ({
+        id: item.id,
+        thumb: `/assets/img/gallery/${item.thumb}`,
+        tag: item.tag,
+        title: item.title,
+        link: `/project-details/${item.id}`,
+    }));
+    const items = Array.isArray(itemsProp) && itemsProp.length > 0 ? itemsProp : defaultItems;
+
+    const [activeServiceId, setActiveServiceId] = useState(items[0]?.id ?? null);
 
     const handleMouseEnter = (id) => {
         setActiveServiceId(id);
@@ -30,6 +39,7 @@ const ProjectStyle2 = ({ projectTitle }) => {
                             <div className="col-md-12 gallery-content">
                                 <div className="magnific-mix-gallery gallery-masonary">
                                     <IsotopeGallery
+                                        items={items}
                                         activeServiceId={activeServiceId}
                                         handleMouseEnter={handleMouseEnter}
                                         handleMouseLeave={handleMouseLeave} />

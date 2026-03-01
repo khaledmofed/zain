@@ -6918,6 +6918,12 @@ img.toty-logo {
   height: 100%;
 }
 
+/* غلاف فلتر ألوان الشكل (الفلتر يُطبّق من JS بـ id ديناميكي) */
+.gallery-style-two .shape .shape-recolor {
+  display: block;
+  line-height: 0;
+}
+
 .gallery-style-two > img {
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
@@ -12912,6 +12918,10 @@ ul.list-regular li::after {
   justify-content: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
   text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  user-select: none;
 }
 
 .whatsapp-float i {

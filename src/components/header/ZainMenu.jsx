@@ -23,6 +23,9 @@ const ZainMenu = ({ toggleSubMenu, navbarPlacement }) => {
                 <li className={isActive('/about-us') ? 'active' : ''}>
                     <Link href="/about-us">{t('aboutUs')}</Link>
                 </li>
+                <li className={isActive('/projects') ? 'active' : ''}>
+                    <Link href="/projects">{t('projects')}</Link>
+                </li>
                 <li className={isActive('/zain-infra') ? 'active' : ''}>
                     <Link href="/zain-infra">{t('zainInfra')}</Link>
                 </li>

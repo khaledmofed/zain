@@ -4,6 +4,7 @@
     "aboutUs": "About Us",
     "services": "Services",
     "blogs": "Blogs",
+    "projects": "Projects",
     "contactUs": "Contact Us",
     "getConsultant": "Get in touch",
     "readMore": "Read More",
@@ -110,6 +111,8 @@
   "project": {
     "popularProjects": "Popular Projects",
     "recentCompletedProjects": "Our most recent Completed Projects",
+    "pageTitle": "Projects",
+    "breadcrumb": "Projects",
     "detailsTitle": "Project Details",
     "projectInfo": "Project Info",
     "category": "Category",

@@ -4,6 +4,7 @@
     "aboutUs": "من نحن",
     "services": "الخدمات",
     "blogs": "المدونات",
+    "projects": "المشاريع",
     "contactUs": "اتصل بنا",
     "getConsultant": "تواصل معنا",
     "readMore": "اقرأ المزيد",
@@ -110,6 +111,8 @@
   "project": {
     "popularProjects": "المشاريع الشائعة",
     "recentCompletedProjects": "أحدث المشاريع المكتملة لدينا",
+    "pageTitle": "المشاريع",
+    "breadcrumb": "المشاريع",
     "detailsTitle": "تفاصيل المشروع",
     "projectInfo": "معلومات المشروع",
     "category": "التصنيف",
